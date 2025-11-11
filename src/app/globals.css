@@ -6,7 +6,7 @@
   --color-my-ash: #929398;
   --color-my-highlight: #473d3d;
   --color-my-deep-black: #101010;
-  --color-my-black: #211f1f;
+  --color-my-black: #262323;
   --font-rethink: "rethink", sans-serif; 
 }
 
@@ -36,11 +36,19 @@
 
 body {
   font-family: var(--font-rethink);
+  color: var(--color-my-ash);
 }
 
 .glass {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.box-pattern {
+  background-color: var(--color-my-deep-black);
+  background-image: 
+    linear-gradient(to right, #3d373759, transparent 1px),
+    linear-gradient(to bottom, #211f1f38 1px, transparent 1px);
+  background-size: 20px 10px;
 }
