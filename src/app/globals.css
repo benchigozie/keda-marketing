@@ -6,8 +6,9 @@
   --color-my-ash: #929398;
   --color-my-highlight: #473d3d;
   --color-my-deep-black: #101010;
-  --color-my-black: #262323;
-  --font-rethink: "rethink", sans-serif; 
+  --color-my-black: #1c1a1a;
+  --font-rethink: "rethink", sans-serif;
+  --font-manrope: "manrope", sans-serif; 
 }
 
 @font-face {
@@ -34,6 +35,22 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "manrope";
+  src: url("/fonts/manrope/Manrope-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "manrope";
+  src: url("/fonts/manrope/Manrope-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   font-family: var(--font-rethink);
   color: var(--color-my-ash);
@@ -51,4 +68,22 @@ body {
     linear-gradient(to right, #3d373759, transparent 1px),
     linear-gradient(to bottom, #211f1f38 1px, transparent 1px);
   background-size: 20px 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  animation: scroll 25s linear infinite;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
 }

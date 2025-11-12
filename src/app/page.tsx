@@ -1,8 +1,12 @@
+import Credentials from "@/components/Credentials"
 import Hero from "@/components/Hero"
 
 function page() {
   return (
-    <Hero />
+    <div>
+      <Hero />
+      <Credentials />
+    </div>
   )
 }
 
