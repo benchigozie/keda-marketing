@@ -1,4 +1,5 @@
 import Credentials from "@/components/Credentials"
+import Expertise from "@/components/Expertise"
 import Hero from "@/components/Hero"
 
 function page() {
@@ -6,6 +7,7 @@ function page() {
     <div>
       <Hero />
       <Credentials />
+      <Expertise />
     </div>
   )
 }
