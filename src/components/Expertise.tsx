@@ -4,13 +4,13 @@ function Expertise() {
   return (
     <section className="bg-my-deep-black pt-12">
       <div className="flex flex-col gap-6 max-w-6xl mx-auto">
-        <div className="w-36 rounded-full flex justify-center mx-auto gap-1 p-2 bg-my-deep-black border border-my-black">
-          <Image src="/images/crown.svg" alt="" width={20} height={20} />
+        <div className="rounded-full flex justify-center mx-auto gap-1 p-2 bg-my-deep-black border border-my-black">
+          <Image src="/images/crown.svg" alt="" width={20} height={20} className="object-contain"/>
           <p className="text-my-lime">Expertise</p>
         </div>
         <h2 className="font-bold text-5xl text-my-white text-center">Our Expertise</h2>
         <p className="text-center text-lg font-semibold max-w-4xl mx-auto">Explore our specialized skills and knowledge across various industries. Discover how our unique value proposition sets us apart in delivering exceptional results.</p>
-        <div className="flex flex-col pt-8">
+        <div className="flex flex-col pt-8 gap-5">
           <div className="flex bg-my-blacker rounded-2xl overflow-hidden">
             <div className="h-[350px] w-[350px] bg-my-highlight">
               <Image />
