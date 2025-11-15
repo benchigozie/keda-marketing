@@ -15,7 +15,7 @@ function Why() {
             <div className="p-8 bg-my-blacker rounded-xl border border-my-black flex flex-col gap-6">
               <div className="flex items-center gap-2">
                 <Image src="/images/crown2.svg" alt="" width={25} height={25} className="object-contain" />
-                <h3>Expertise and Experience</h3>
+                <h3 className="text-xl text-my-white">Expertise and Experience</h3>
               </div>
               <div className="border-t border-my-black"></div>
               <div>
@@ -25,7 +25,7 @@ function Why() {
             <div className="p-8 bg-my-blacker rounded-xl border border-my-black flex flex-col gap-6">
               <div className="flex items-center gap-2">
                 <Image src="/images/crown2.svg" alt="" width={25} height={25} className="object-contain" />
-                <h3>Expertise and Experience</h3>
+                <h3 className="text-xl text-my-white">Expertise and Experience</h3>
               </div>
               <div className="border-t border-my-black"></div>
               <div>
@@ -35,7 +35,7 @@ function Why() {
             <div className="p-8 bg-my-blacker rounded-xl border border-my-black flex flex-col gap-6">
               <div className="flex items-center gap-2">
                 <Image src="/images/crown2.svg" alt="" width={25} height={25} className="object-contain" />
-                <h3>Expertise and Experience</h3>
+                <h3 className="text-xl text-my-white">Expertise and Experience</h3>
               </div>
               <div className="border-t border-my-black"></div>
               <div>
@@ -48,7 +48,7 @@ function Why() {
             <div className="p-8 bg-my-blacker rounded-xl border border-my-black flex flex-col gap-6">
               <div className="flex items-center gap-2">
                 <Image src="/images/crown2.svg" alt="" width={25} height={25} className="object-contain" />
-                <h3>Expertise and Experience</h3>
+                <h3 className="text-xl text-my-white">Expertise and Experience</h3>
               </div>
               <div className="border-t border-my-black"></div>
               <div>
@@ -58,7 +58,7 @@ function Why() {
             <div className="p-8 bg-my-blacker rounded-xl border border-my-black flex flex-col gap-6">
               <div className="flex items-center gap-2">
                 <Image src="/images/crown2.svg" alt="" width={25} height={25} className="object-contain" />
-                <h3>Expertise and Experience</h3>
+                <h3 className="text-xl text-my-white">Expertise and Experience</h3>
               </div>
               <div className="border-t border-my-black"></div>
               <div>
@@ -68,7 +68,7 @@ function Why() {
             <div className="p-8 bg-my-blacker rounded-xl border border-my-black flex flex-col gap-6">
               <div className="flex items-center gap-2">
                 <Image src="/images/crown2.svg" alt="" width={25} height={25} className="object-contain" />
-                <h3>Expertise and Experience</h3>
+                <h3 className="text-xl text-my-white">Expertise and Experience</h3>
               </div>
               <div className="border-t border-my-black"></div>
               <div>
