@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 function Process() {
   return (
-    <section className="bg-my-deep-black pt-12">
+    <section className="bg-my-deep-black py-12">
       <div className="flex flex-col gap-6 max-w-6xl mx-auto">
         <div className="rounded-full flex justify-center mx-auto gap-1 p-2 bg-my-deep-black border border-my-black">
           <Image src="/images/process.svg" alt="" width={20} height={20} className="object-contain" />

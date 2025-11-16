@@ -1,3 +1,4 @@
+import About from "@/components/About"
 import Credentials from "@/components/Credentials"
 import Expertise from "@/components/Expertise"
 import Features from "@/components/Features"
@@ -14,6 +15,7 @@ function page() {
       <Why />
       <Features />
       <Process />
+      <About />
     </div>
   )
 }
