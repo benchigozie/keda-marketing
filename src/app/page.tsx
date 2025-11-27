@@ -4,6 +4,7 @@ import Expertise from "@/components/Expertise"
 import Features from "@/components/Features"
 import Hero from "@/components/Hero"
 import Process from "@/components/Process"
+import Testimonials from "@/components/Testimonials"
 import Values from "@/components/Values"
 import Why from "@/components/Why"
 
@@ -18,6 +19,7 @@ function page() {
       <Process />
       <About />
       <Values />
+      <Testimonials />
     </div>
   )
 }

@@ -57,7 +57,7 @@ function Values() {
                         <div className="absolute -left-0.5 top-11.5 w-1 h-10 bg-my-lime rounded-full shadow-[8px_0_20px_0px_#CDF140]"></div>
                     </div>
                     <div className="relative flex flex-col gap-4 border-l border-dashed border-my-highlight px-6 p-4">
-                        <div className="h-5 w-full"></div>
+                        <div className="h-5 w-full "></div>
                         <div className="flex justify-between">
                             <Image src="" alt="" width={25} height={25} />
                             <h3>Excellence Pursuit</h3>
