@@ -1,6 +1,7 @@
 import About from "@/components/About"
 import Credentials from "@/components/Credentials"
 import Expertise from "@/components/Expertise"
+import FAQs from "@/components/FAQs"
 import Features from "@/components/Features"
 import Hero from "@/components/Hero"
 import Process from "@/components/Process"
@@ -20,6 +21,7 @@ function page() {
       <About />
       <Values />
       <Testimonials />
+      <FAQs />
     </div>
   )
 }
