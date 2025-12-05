@@ -158,7 +158,7 @@ function Contact() {
                             onMouseLeave={() => setLdHovered(false)}
                         >
                             <div className="bg-my-black rounded-lg p-4">
-                                <Image src="/images/instagram.svg" alt="Instagram Icon" width={24} height={24} className="object-contain" />
+                                <Image src="/images/linkedin.svg" alt="Instagram Icon" width={24} height={24} className="object-contain" />
                             </div>
                             <p>@kedamarketing</p>
                             <div>

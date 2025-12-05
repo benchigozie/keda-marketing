@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { useState, useEffect, useRef } from "react"
+import { useState } from "react"
 import { usePathname } from "next/navigation"
 
 type NavLink = {
@@ -13,7 +13,6 @@ type NavLink = {
 function Header() {
 
     const pathname = usePathname();
-    const [hash, setHash] = useState<string>("");
 
     const [ menuState, setMenuState ] = useState<boolean>(false);
 

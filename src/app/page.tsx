@@ -4,6 +4,7 @@ import Credentials from "@/components/Credentials"
 import Expertise from "@/components/Expertise"
 import FAQs from "@/components/FAQs"
 import Features from "@/components/Features"
+import Footer from "@/components/Footer"
 import Hero from "@/components/Hero"
 import Process from "@/components/Process"
 import Testimonials from "@/components/Testimonials"
@@ -24,6 +25,7 @@ function page() {
       <Testimonials />
       <FAQs />
       <Contact />
+      <Footer />
     </div>
   )
 }
