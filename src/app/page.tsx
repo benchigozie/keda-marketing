@@ -1,4 +1,5 @@
 import About from "@/components/About"
+import Contact from "@/components/Contact"
 import Credentials from "@/components/Credentials"
 import Expertise from "@/components/Expertise"
 import FAQs from "@/components/FAQs"
@@ -22,6 +23,7 @@ function page() {
       <Values />
       <Testimonials />
       <FAQs />
+      <Contact />
     </div>
   )
 }
