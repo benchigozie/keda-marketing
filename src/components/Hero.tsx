@@ -26,11 +26,11 @@ function Hero() {
 
     return (
         <section className="relative">
-            <div  className="h-[81vh] w-full box-pattern flex items-center justify-center">
+            <div  className="md:h-[81vh] py-32 md:py-4 w-full box-pattern flex items-center justify-center">
                 <motion.div 
                 variants={container}
                 initial="hidden"
-                animate="show"  className="relative z-10 flex flex-col justify-end pb-12 items-center gap-8 py-2 px-4 text-center h-full">
+                animate="show"  className="relative z-10 flex flex-col justify-end items-center gap-8 py-2 px-4 text-center md:h-full">
                     <motion.div variants={child} className='flex items-center gap-4'>
                         <span className='bg-my-deep-black p-3 border border-my-black rounded-full'>
                             <Image
@@ -56,9 +56,9 @@ function Hero() {
                             <p className='font-semibold'>Rated 5.0</p>
                         </span>
                     </motion.div>
-                    <motion.h1 variants={child} className="max-w-[800px] text-center text-6xl font-bold text-my-white">Get More Customers and Increase Your Revenue in Just 90 Days</motion.h1>
+                    <motion.h1 variants={child} className="max-w-[800px] text-center text-4xl md:text-6xl font-bold text-my-white">Get More Customers and Increase Your Revenue in Just 90 Days</motion.h1>
                     <motion.p variants={child} className="text-xl font-semibold">Amplify your company's reach and increase your revenue in 3 months.</motion.p>
-                    <motion.button variants={child} className="text-my-deep-black px-7 py-4 bg-my-lime rounded-full font-semibold text-lg">Get Started Today</motion.button>
+                    <motion.button variants={child} className="text-my-deep-black px-6 py-3 md:px-7 md:py-4 bg-my-lime rounded-full font-semibold text-lg">Get Started Today</motion.button>
                 </motion.div>
                 <div className="absolute bottom-0 bg-linear-to-t from-my-deep-black/90 to-my-deep-black/10 h-3/5 w-full"></div>
             </div>

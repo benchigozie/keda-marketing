@@ -39,15 +39,15 @@ function Contact() {
 
     return (
         <section className="bg-my-deep-black py-12">
-            <div className="flex flex-col gap-6 max-w-6xl mx-auto">
-                <div className="bg-my-blacker p-10 rounded-xl border-my-black border divide-y divide-my-black">
+            <div className="flex flex-col gap-6 max-w-6xl mx-auto px-3">
+                <div className="bg-my-blacker p-6 md:p-10 rounded-xl border-my-black border divide-y divide-my-black">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                         <div className="flex flex-col gap-6">
                             <div className="rounded-full flex justify-center gap-1 py-2 px-4 bg-my-blacker border border-my-black w-max">
                                 <Image src="/images/contact.svg" alt="" width={20} height={20} className="object-contain" />
                                 <p className="text-my-lime">Contact Us</p>
                             </div>
-                            <h2 className="font-bold text-5xl text-my-white">Get in Touch with Keda Marketing</h2>
+                            <h2 className="font-bold text-3xl md:text-5xl text-my-white">Get in Touch with Keda Marketing</h2>
                             <p className="text-xl font-semibold max-w-4xl mx-auto">Have a question or need more information about our services? Fill out the form, and our team will get back to you as soon as possible.</p>
                         </div>
                         <div>
@@ -111,13 +111,13 @@ function Contact() {
                             </Formik>
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6 mt-6">
+                    <div className="grid md:grid-cols-3 gap-2 md:gap-6 pt-6 mt-6">
                         <div
-                            className="p-4 bg-my-blacker rounded-lg border border-my-black flex justify-between items-center gap-4"
+                            className="p-2 md:p-4 bg-my-blacker rounded-lg border border-my-black flex justify-between items-center gap-4"
                             onMouseEnter={() => setIgHovered(true)}
                             onMouseLeave={() => setIgHovered(false)}
                         >
-                            <div className="bg-my-black rounded-lg p-4">
+                            <div className="bg-my-black rounded-lg p-1 md:p-4">
                                 <Image src="/images/instagram.svg" alt="Instagram Icon" width={24} height={24} className="object-contain" />
                             </div>
                             <p>@kedamarketing</p>
@@ -133,11 +133,11 @@ function Contact() {
                             </div>
                         </div>
                         <div
-                            className="p-4 bg-my-blacker rounded-lg border border-my-black flex justify-between items-center gap-4"
+                            className="p-2 md:p-4 bg-my-blacker rounded-lg border border-my-black flex justify-between items-center gap-4"
                             onMouseEnter={() => setFbHovered(true)}
                             onMouseLeave={() => setFbHovered(false)}
                         >
-                            <div className="bg-my-black rounded-lg p-4">
+                            <div className="bg-my-black rounded-lg p-1 md:p-4">
                                 <Image src="/images/facebook.svg" alt="Instagram Icon" width={24} height={24} className="object-contain" />
                             </div>
                             <p>@kedamarketing</p>
@@ -153,11 +153,11 @@ function Contact() {
                             </div>
                         </div>
                         <div
-                            className="p-4 bg-my-blacker rounded-lg border border-my-black flex justify-between items-center gap-4"
+                            className="p-2 md:p-4 bg-my-blacker rounded-lg border border-my-black flex justify-between items-center gap-4"
                             onMouseEnter={() => setLdHovered(true)}
                             onMouseLeave={() => setLdHovered(false)}
                         >
-                            <div className="bg-my-black rounded-lg p-4">
+                            <div className="bg-my-black rounded-lg p-1 md:p-4">
                                 <Image src="/images/linkedin.svg" alt="Instagram Icon" width={24} height={24} className="object-contain" />
                             </div>
                             <p>@kedamarketing</p>

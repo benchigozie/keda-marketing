@@ -3,14 +3,14 @@ import Image from "next/image"
 function Values() {
     return (
         <section className="bg-my-deep-black py-12">
-            <div className="flex flex-col gap-6 max-w-6xl mx-auto">
+            <div className="flex flex-col gap-6 max-w-6xl mx-auto px-3">
                 <div className="rounded-full flex justify-center mx-auto gap-1 p-2 bg-my-deep-black border border-my-black">
                     <Image src="/images/values.svg" alt="" width={20} height={20} className="object-contain" />
                     <p className="text-my-lime">Values</p>
                 </div>
-                <h2 className="font-bold text-5xl text-my-white text-center">Our Guiding Principles</h2>
+                <h2 className="font-bold text-3xl md:text-5xl text-my-white text-center">Our Guiding Principles</h2>
                 <p className="text-center text-lg font-semibold max-w-4xl mx-auto">We prioritize ethical practices, customer focus, and continuous improvement.</p>
-                <div className="grid grid-cols-2 mt-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 mt-8">
                     <div className="relative flex flex-col gap-4 border-l border-dashed border-my-highlight px-6 p-4">
                         <div className="h-5 w-full"></div>
                         <div className="flex justify-between">

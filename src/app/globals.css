@@ -56,7 +56,6 @@ body {
   font-family: var(--font-rethink);
   color: var(--color-my-ash);
   font-weight: 600;
-  font-size: 18px;
 }
 
 .glass {
@@ -82,9 +81,27 @@ body {
   }
 }
 
-.animate-scroll {
+@keyframes scrollbig {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-768px);
+  }
+}
+
+.animate-scroll-lg {
   display: flex;
   animation: scroll 25s linear infinite;
+}
+
+.animate-scroll {
+  display: flex;
+  animation: scrollbig 25s linear infinite;
+}
+
+.animate-scroll-lg:hover {
+  animation-play-state: paused;
 }
 
 .animate-scroll:hover {

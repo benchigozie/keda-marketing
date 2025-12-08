@@ -3,18 +3,18 @@ import Link from "next/link"
 
 function Footer() {
     return (
-        <section className="bg-my-deep-black py-12 px-9">
-            <div className="bg-my-blacker border border-my-black px-12 pt-16 pb-8 rounded-xl">
+        <section className="bg-my-deep-black py-12 px-4 md:px-9">
+            <div className="bg-my-blacker border border-my-black px-6 md:px-12 pt-16 pb-8 rounded-xl">
                 <div className="flex flex-col gap-6 max-w-6xl mx-auto">
-                    <div className="grid grid-cols-2 gap-6">
+                    <div className="grid grid-col-1 md:grid-cols-2 gap-6">
                         <div className="flex flex-col gap-4">
                             <p>What are you waiting for?</p>
-                            <p className="text-3xl text-my-white font-emibold">Let's help you get more <span className="text-my-lime">customers</span> and multiply your <span className="text-my-lime">revenue</span>.</p>
+                            <p className="text-xl md:text-3xl text-my-white font-semibold">Let's help you get more <span className="text-my-lime">customers</span> and multiply your <span className="text-my-lime">revenue</span>.</p>
                             <div>
-                                <button className="mt-4 bg-my-lime py-4 px-6 rounded-full text-my-black flex justify-center gap-2 items-center"><span>Get it Touch</span><ArrowRight size={20} /></button>
+                                <button className="mt-4 bg-my-lime py-2 md:py-4 px-4 md:px-6 rounded-full text-my-black flex justify-center gap-2 items-center"><span>Get it Touch</span><ArrowRight size={20} /></button>
                             </div>
                         </div>
-                        <div className="flex justify-between mr-28">
+                        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 md:gap-y-10 md:mr-28">
                             <div className="flex flex-col gap-3">
                                 <h3 className="text-xl text-my-white mb-2">Pages</h3>
                                 <Link href="">Home</Link>

@@ -3,9 +3,9 @@ import Image from "next/image"
 function ShowCaseLogos() {
   return (
     <section className="mx-auto">
-      <div className="h-20 max-w-5xl overflow-hidden relative">
-        <div className="w-[200%] flex animate-scroll">
-          <div className="flex w-1/2 justify-between items-center px-12 flex-none">
+      <div className="max-w-[350px] md:max-w-2xl lg:max-w-4xl overflow-hidden relative">
+        <div className="w-[200%] flex animate-scroll lg:animate-scroll-lg py-4">
+          <div className="lg:w-1/2 w-3xl flex justify-between items-center px-8 flex-none">
             <Image src="/images/clientlogo1.avif" alt="" width={60} height={40} className="object-contain" />
             <Image src="/images/clientlogo2.avif" alt="" width={110} height={40} className="object-contain" />
             <Image src="/images/clientlogo3.avif" alt="" width={50} height={40} className="object-contain" />
@@ -13,7 +13,7 @@ function ShowCaseLogos() {
             <Image src="/images/clientlogo5.avif" alt="" width={100} height={40} className="object-contain" />
             <Image src="/images/clientlogo6.avif" alt="" width={100} height={40} className="object-contain" />
           </div>
-          <div className="flex w-1/2 justify-between items-center px-12 flex-none">
+          <div className="lg:w-1/2 w-3xl flex justify-between items-center px-8 flex-none">
             <Image src="/images/clientlogo1.avif" alt="" width={60} height={40} className="object-contain" />
             <Image src="/images/clientlogo2.avif" alt="" width={110} height={40} className="object-contain" />
             <Image src="/images/clientlogo3.avif" alt="" width={50} height={40} className="object-contain" />

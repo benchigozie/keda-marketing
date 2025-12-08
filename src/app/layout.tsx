@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className="antialiased"
+        className="antialiased text-base md:text-lg"
       >
         <Header />
         {children}

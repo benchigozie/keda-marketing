@@ -10,7 +10,7 @@ type TestimonialProps = {
 
 function Testimonial({ name, image, title, emotion, text }: TestimonialProps) {
   return (
-    <div className="bg-my-blacker p-9 rounded-xl border border-my-black flex flex-col gap-6 h-max">
+    <div className="bg-my-blacker px-5 py-7 md:p-9 rounded-xl border border-my-black flex flex-col gap-4 md:gap-6 h-max">
       <p className="text-xl text-my-lime">{emotion}!</p>
       <p>{text}</p>
       <hr className="text-my-black" />

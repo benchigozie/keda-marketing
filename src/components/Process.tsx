@@ -4,14 +4,14 @@ import { ArrowRight } from 'lucide-react';
 function Process() {
   return (
     <section className="bg-my-deep-black py-12">
-      <div className="flex flex-col gap-6 max-w-6xl mx-auto">
+      <div className="flex flex-col gap-6 max-w-6xl mx-auto px-3">
         <div className="rounded-full flex justify-center mx-auto gap-1 p-2 bg-my-deep-black border border-my-black">
           <Image src="/images/process.svg" alt="" width={20} height={20} className="object-contain" />
           <p className="text-my-lime">Process</p>
         </div>
-        <h2 className="font-bold text-5xl text-my-white text-center">Our Unique Approach</h2>
+        <h2 className="font-bold text-3xl md:text-5xl text-my-white text-center">Our Unique Approach</h2>
         <p className="text-center text-lg font-semibold max-w-4xl mx-auto">We believe in the power of systems and we use it to deliver exceptional results.</p>
-        <div className='grid grid-cols-3 gap-6 mt-8'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-6 mt-8'>
           <div className='bg-my-blacker border border-my-black p-8 rounded-xl flex flex-col gap-6'>
             <div className='flex justify-between'>
               <div className='bg-my-black p-2 rounded-lg'>
@@ -85,13 +85,13 @@ function Process() {
             <p>Continuous improvement is key. We value your input and use feedback to refine our processes.</p>
           </div>
         </div>
-        <div className='bg-my-blacker border border-my-black p-10 rounded-xl flex justify-between items-center gap-6'>
+        <div className='bg-my-blacker border border-my-black p-10 rounded-xl flex flex-col md:flex-row justify-between md:items-center gap-2 md:gap-6'>
           <div className='flex flex-col gap-2'>
             <p className='text-xl'>What are you waiting for?</p>
-            <h3 className='text-my-white text-3xl'>Start growing your company's <span className='text-my-lime'>revenue</span> today</h3>
+            <h3 className='text-my-white text-2xl md:text-3xl'>Start growing your company's <span className='text-my-lime'>revenue</span> today</h3>
           </div>
           <div>
-            <button className="mt-4 bg-my-lime py-4 px-6 rounded-full text-my-black flex justify-center gap-2 items-center"><span>Get it Touch</span><ArrowRight size={20} /></button>
+            <button className="mt-4 bg-my-lime py-3 md:py-4 px-5 md:px-6 rounded-full text-my-black flex justify-center gap-2 items-center whitespace-nowrap"><span>Get it Touch</span><ArrowRight size={20} /></button>
           </div>
         </div>
       </div>

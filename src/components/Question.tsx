@@ -13,10 +13,10 @@ function Question({ question, answer }: QuestionProps) {
     const contentRef = useRef<HTMLDivElement>(null);
 
     return (
-        <div className="p-5 ">
+        <div className="p-3 md:p-5 ">
             <button
                 onClick={() => setOpen(!open)}
-                className="text-xl text-my-white text-left flex justify-between gap-3"
+                className="text-lg md:text-xl text-my-white text-left flex justify-between gap-3"
             >
                 <p>{question}?</p>
                 <div className="bg-my-black p-2 rounded-full flex items-center justify-center h-max shrink-0">

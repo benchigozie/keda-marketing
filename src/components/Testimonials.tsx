@@ -57,14 +57,14 @@ const TestimonialsData: TestimonialType[] = [
 function Testimonials() {
     return (
         <section className="bg-my-deep-black py-12">
-            <div className="flex flex-col gap-6 max-w-6xl mx-auto">
+            <div className="flex flex-col gap-6 max-w-6xl mx-auto px-3">
                 <div className="rounded-full flex justify-center mx-auto gap-1 p-2 bg-my-deep-black border border-my-black">
                     <Image src="/images/testimonials.svg" alt="" width={20} height={20} className="object-contain" />
                     <p className="text-my-lime">Testimonials</p>
                 </div>
-                <h2 className="font-bold text-5xl text-my-white text-center">What our Clients say About US</h2>
+                <h2 className="font-bold text-3xl md:text-5xl text-my-white text-center">What our Clients say About US</h2>
                 <p className="text-center text-lg font-semibold max-w-4xl mx-auto">We prioritize ethical practices, customer focus, and continuous improvement.</p>
-                <div className="grid grid-cols-3 gap-3 g pt-10">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 g pt-10">
                     {TestimonialsData.map((testimonial, index) => (
                         <Testimonial
                             key={index}
