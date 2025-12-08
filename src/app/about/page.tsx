@@ -1,7 +1,11 @@
+import AboutHero from "@/components/AboutHero";
+
 function page() {
   return (
-    <div>page</div>
+    <div>
+      <AboutHero />
+    </div>
   )
 }
 
-export default page
+export default page;
