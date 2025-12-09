@@ -14,7 +14,7 @@ function OurStory() {
                     <div className="relative ml-4 md:ml-0">
                         <div className="bg-my-blacker border border-my-black rounded-xl p-4 md:p-7 flex flex-col gap-4">
                             <p className="text-4xl text-my-lime mb-8">2021</p>
-                            <p>Founded</p>
+                            <p className="text-xl text-my-white">Founded</p>
                             <p>Keda was founded in 2021 with a vision to empower SMEs and local businesses with the digital tools they need to scale. What started as a small team with a big dream has grown into a dynamic agency.</p>
                         </div>
                         <div className="hidden md:block absolute -bottom-10 h-10 w-full border-b-2 border-dashed border-my-black "></div>
@@ -25,7 +25,7 @@ function OurStory() {
                     <div className="relative ml-4 md:ml-0">
                         <div className="mx-0 md:mx-3 my-3 md:my-0 bg-my-blacker border border-my-black rounded-xl p-4 md:p-7 flex flex-col gap-4">
                             <p className="text-4xl text-my-lime mb-8">2023</p>
-                            <p>75+ Successful Campaigns</p>
+                            <p className="text-xl text-my-white">75+ Successful Campaigns</p>
                             <p>In 2023, we started offering our services to local businesses, brands and enterprises. Working on over 75 marketing campaigns locally and internationally.</p>
                         </div>
                         <div className="hidden md:block absolute -bottom-10 h-10 w-full border-b-2 border-dashed border-my-black "></div>
@@ -36,7 +36,7 @@ function OurStory() {
                     <div className="relative ml-4 md:ml-0">
                         <div className="bg-my-blacker border border-my-black rounded-xl p-4 md:p-7 flex flex-col gap-4">
                             <p className="text-4xl text-my-lime mb-8">2025</p>
-                            <p>4+ Years of Experience</p>
+                            <p className="text-xl text-my-white">4+ Years of Experience</p>
                             <p>2025, marks a great milestone for us because we have been in operation for over 4 years now and it's been an amzaing journey. We are grateful for growth and optimistic towards the future.</p>
                         </div>
                         <div className="hidden md:block absolute -bottom-10 h-10 w-full border-b-2 border-dashed border-my-black "></div>
