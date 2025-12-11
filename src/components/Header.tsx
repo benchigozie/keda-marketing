@@ -30,7 +30,7 @@ function Header() {
 
     return (
         <section className="fixed w-full z-20">
-            <div className="relative w-full max-w-[min(950px,90%)] mx-auto flex justify-between items-center glass bg-my-deep-black py-5 lg:py-3 px-3 rounded-full mt-8 border border-my-black shadow-lg">
+            <div className="relative w-full max-w-[min(950px,90%)] mx-auto flex justify-between items-center glass bg-my-deep-black/70 py-5 lg:py-3 px-3 rounded-full mt-8 border border-my-black shadow-lg backdrop-blur-md">
                 <a>
                     <Image
                         src="/images/keda-logo.webp"
