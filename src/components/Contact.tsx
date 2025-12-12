@@ -9,6 +9,8 @@ import { useState } from "react";
 interface ContactFormValues {
     name: string;
     email: string;
+    companyName?: string;
+    budget?: number;
     message: string;
 }
 
@@ -17,6 +19,8 @@ function Contact() {
     const initialValues: ContactFormValues = {
         name: "",
         email: "",
+        companyName: "",
+        budget: undefined,
         message: "",
     };
 
@@ -25,6 +29,12 @@ function Contact() {
         email: Yup.string()
             .email("Enter a valid email address")
             .required("Email is required"),
+        companyName: Yup.string(),
+        budget: Yup.number()
+            .typeError("Budget must be a number")
+            .positive("Budget must be a positive number")
+            .integer("Budget must be an integer")
+            .nullable(),
         message: Yup.string().required("Message is required"),
     });
 
@@ -86,13 +96,43 @@ function Contact() {
                                         className="text-red-500 text-sm"
                                     />
 
+                                    <label htmlFor="company-name" className="sr-only">Name</label>
+                                    <Field
+                                        type="text"
+                                        id="company-name"
+                                        name="company-name"
+                                        className="focus:outline focus:outline-my-ash bg-my-deep-black py-2 px-4 rounded-md placeholder-my-ash"
+                                        placeholder="Company Name"
+                                    />
+                                    <ErrorMessage
+                                        name="company-name"
+                                        component="p"
+                                        className="text-red-500 text-sm"
+                                    />
+
+                                    <label htmlFor="budget" className="sr-only">Name</label>
+                                    <Field
+                                        type="number"
+                                        id="budget"
+                                        name="budget"
+                                        className="focus:outline focus:outline-my-ash bg-my-deep-black py-2 px-4 rounded-md placeholder-my-ash [appearance:textfield]
+         [&::-webkit-inner-spin-button]:hidden 
+         [&::-webkit-outer-spin-button]:hidden"
+                                        placeholder="What is your budget (naira)?"
+                                    />
+                                    <ErrorMessage
+                                        name="budget"
+                                        component="p"
+                                        className="text-red-500 text-sm"
+                                    />
+
                                     <label htmlFor="message" className="sr-only">Message</label>
                                     <Field
                                         as="textarea"
                                         id="message"
                                         name="message"
                                         className="focus:outline focus:outline-my-ash bg-my-deep-black py-2 px-4 rounded-md placeholder-my-ash resize-none"
-                                        placeholder="Message"
+                                        placeholder="Tell us about your project..."
                                         rows="5"
                                     />
                                     <ErrorMessage
@@ -125,7 +165,7 @@ function Contact() {
                                 <div className="w-6 h-6 overflow-hidden mr-4" >
                                     <div className={`${igHovered ? '-translate-y-1/2 translate-x-0' : "-translate-x-1/2"} transition-transform duration-400 ease-in-out grid grid-cols-2 w-12 h-12`}>
                                         <p></p>
-                                        <MoveUpRight size={24} className="text-my-lime"/>
+                                        <MoveUpRight size={24} className="text-my-lime" />
                                         <MoveUpRight size={24} className="text-my-lime" />
                                         <p></p>
                                     </div>
@@ -145,7 +185,7 @@ function Contact() {
                                 <div className="w-6 h-6 overflow-hidden mr-4" >
                                     <div className={`${fbHovered ? '-translate-y-1/2 translate-x-0' : "-translate-x-1/2"} transition-transform duration-400 ease-in-out grid grid-cols-2 w-12 h-12`}>
                                         <p></p>
-                                        <MoveUpRight size={24} className="text-my-lime"/>
+                                        <MoveUpRight size={24} className="text-my-lime" />
                                         <MoveUpRight size={24} className="text-my-lime" />
                                         <p></p>
                                     </div>
@@ -165,7 +205,7 @@ function Contact() {
                                 <div className="w-6 h-6 overflow-hidden mr-4" >
                                     <div className={`${ldHovered ? '-translate-y-1/2 translate-x-0' : "-translate-x-1/2"} transition-transform duration-400 ease-in-out grid grid-cols-2 w-12 h-12`}>
                                         <p></p>
-                                        <MoveUpRight size={24} className="text-my-lime"/>
+                                        <MoveUpRight size={24} className="text-my-lime" />
                                         <MoveUpRight size={24} className="text-my-lime" />
                                         <p></p>
                                     </div>

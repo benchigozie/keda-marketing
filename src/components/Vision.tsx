@@ -10,8 +10,8 @@ function Vision() {
                 </div>
                 <h2 className="font-bold text-3xl md:text-5xl text-my-white text-center">Our Vision And Values</h2>
                 <p className="text-center text-lg md:text-xl font-semibold max-w-4xl mx-auto">Still you have any questions? Contact our Team via support@Oustand.digital.com</p>
-                <div className="grid grid-cols-2 md:grid-cols-4 mt-10 gap-4">
-                    <div className="p-8 bg-my-blacker col-span-2 rounded-2xl border border-my-black flex flex-col gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mt-10 gap-4">
+                    <div className="p-8 bg-my-blacker md:col-span-2 rounded-2xl border border-my-black flex flex-col gap-6">
                         <div className="flex gap-4 items-center">
                             <div className="p-3 bg-my-blacker border border-my-black w-max rounded-xl">
                                 <Image src="/images/mission.svg" alt="Vision 1" width={25} height={25} className="object-contain" />
@@ -20,7 +20,7 @@ function Vision() {
                         </div>
                         <p className="flex flex-col gap-4">To empower local businesses and SMEs with the digital tolls they need to leverage the digital revolution and scale fast.</p>
                     </div>
-                    <div className="p-8 bg-my-blacker col-span-2 rounded-2xl border border-my-black flex flex-col gap-6">
+                    <div className="p-8 bg-my-blacker lg:col-span-2 rounded-2xl border border-my-black flex flex-col gap-6">
                         <div className="flex gap-4 items-center">
                             <div className="p-3 bg-my-blacker border border-my-black w-max rounded-xl">
                                 <Image src="/images/vision.svg" alt="Vision 1" width={25} height={25} className="object-contain" />

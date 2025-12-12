@@ -10,6 +10,43 @@ function Team() {
         </div>
         <h2 className="font-bold text-3xl md:text-5xl text-my-white text-center">Meet The Team</h2>
         <p className="text-center text-lg md:text-xl font-semibold max-w-4xl mx-auto">SWe are a dedicated group of individuals driven by our shared vision of making a real difference in the world.</p>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8'>
+          <div className='bg-my-blacker border border-my-black rounded-xl overflow-clip max-w-96 mx-auto w-full'>
+            <Image src="/images/david.webp" alt="Team Member 1" width={300} height={500} className="w-full h-96 object-cover bg-red-600" />
+            <div className='p-5'>
+              <h3 className='text-xl text-my-white'>David Asoya</h3>
+              <p>Founder</p>
+            </div>
+          </div>
+          <div className='bg-my-blacker border border-my-black rounded-xl overflow-clip max-w-96 mx-auto w-full'>
+            <Image src="/images/bukola.webp" alt="Team Member 1" width={300} height={500} className="w-full h-96 object-cover bg-red-600" />
+            <div className='p-5'>
+              <h3 className='text-xl text-my-white'>Bukola Adewuyi</h3>
+              <p>Content Strategist</p>
+            </div>
+          </div>
+          <div className='bg-my-blacker border border-my-black rounded-xl overflow-clip max-w-96 mx-auto w-full'>
+            <Image src="/images/blessing.webp" alt="Team Member 1" width={300} height={500} className="w-full h-96 object-cover bg-red-600" />
+            <div className='p-5'>
+              <h3 className='text-xl text-my-white'>Blessing Adewuyi</h3>
+              <p>Marketing Assistant</p>
+            </div>
+          </div>
+          <div className='bg-my-blacker border border-my-black rounded-xl overflow-clip max-w-96 mx-auto w-full'>
+            <Image src="/images/richard.webp" alt="Team Member 1" width={300} height={500} className="w-full h-96 object-cover bg-red-600" />
+            <div className='p-5'>
+              <h3 className='text-xl text-my-white'>Joseph Richard</h3>
+              <p>Copy Writer</p>
+            </div>
+          </div>
+          <div className='bg-my-blacker border border-my-black rounded-xl overflow-clip max-w-96 mx-auto w-full'>
+            <Image src="/images/onose.webp" alt="Team Member 1" width={300} height={500} className="w-full h-96 object-cover bg-red-600" />
+            <div className='p-5'>
+              <h3 className='text-xl text-my-white'>Onosemudiana</h3>
+              <p>Lead Generation Specialist</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   )
