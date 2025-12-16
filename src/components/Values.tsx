@@ -14,7 +14,7 @@ function Values() {
                     <div className="relative flex flex-col gap-4 border-l border-dashed border-my-highlight px-6 p-4">
                         <div className="h-5 w-full"></div>
                         <div className="flex justify-between">
-                            <Image src="" alt="" width={25} height={25} />
+                            <Image src="/images/customer.png" alt="" width={25} height={25} />
                             <h3>Customer Focus</h3>
                         </div>
                         <p className="mb-10">We prioritize understanding and meeting our clients' needs to ensure their complete satisfaction.</p>
@@ -23,7 +23,7 @@ function Values() {
                     <div className="relative flex flex-col gap-4 border-l border-dashed border-my-highlight px-6 p-4">
                         <div className="h-5 w-full"></div>
                         <div className="flex justify-between">
-                            <Image src="" alt="" width={25} height={25} />
+                            <Image src="/images/innovation.png" alt="" width={25} height={25} />
                             <h3>Innovation Driven</h3>
                         </div>
                         <p className="mb-10">We embrace creativity and new technologies to provide cutting-edge web solutions.</p>
@@ -32,7 +32,7 @@ function Values() {
                     <div className="relative flex flex-col gap-4 border-l border-dashed border-my-highlight px-6 p-4">
                         <div className="h-5 w-full"></div>
                         <div className="flex justify-between">
-                            <Image src="" alt="" width={25} height={25} />
+                            <Image src="/images/integrity.png" alt="" width={25} height={25} />
                             <h3>Integrity Always</h3>
                         </div>
                         <p>We conduct business with honesty and transparency in every project we undertake.</p>
@@ -41,7 +41,7 @@ function Values() {
                     <div className="relative flex flex-col gap-4 border-l border-dashed border-my-highlight px-6 p-4">
                         <div className="h-5 w-full"></div>
                         <div className="flex justify-between">
-                            <Image src="" alt="" width={25} height={25} />
+                            <Image src="/images/team.png" alt="" width={25} height={25} />
                             <h3>Team Collaboration</h3>
                         </div>
                         <p className="mb-10">We believe in the power of teamwork and effective communication to achieve outstanding results.</p>
@@ -50,7 +50,7 @@ function Values() {
                     <div className="relative flex flex-col gap-4 border-l border-dashed border-my-highlight px-6 p-4">
                         <div className="h-5 w-full"></div>
                         <div className="flex justify-between">
-                            <Image src="" alt="" width={25} height={25} />
+                            <Image src="/images/improvement.png" alt="" width={25} height={25} />
                             <h3>Continuous Improvement</h3>
                         </div>
                         <p className="mb-10">We strive to enhance our skills and processes to deliver better services continually.</p>
@@ -59,7 +59,7 @@ function Values() {
                     <div className="relative flex flex-col gap-4 border-l border-dashed border-my-highlight px-6 p-4">
                         <div className="h-5 w-full "></div>
                         <div className="flex justify-between">
-                            <Image src="" alt="" width={25} height={25} />
+                            <Image src="/images/excellence.png" alt="" width={25} height={25} />
                             <h3>Excellence Pursuit</h3>
                         </div>
                         <p className="mb-10">Our commitment to excellence ensures high-quality outcomes in all our services.</p>

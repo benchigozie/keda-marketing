@@ -10,7 +10,7 @@ function Why() {
         </div>
         <h2 className="font-bold text-3xl md:text-5xl text-my-white text-center">Why Choose Us?</h2>
         <p className="text-center text-lg font-semibold max-w-4xl mx-auto">No fluff just 100% results.</p>
-        <div className="grid grid-cols-1 md:grid-cols-3 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-10">
           <div className="flex flex-col gap-3">
             <div className="p-8 bg-my-blacker rounded-xl border border-my-black flex flex-col gap-6">
               <div className="flex items-center gap-2">
@@ -43,7 +43,9 @@ function Why() {
               </div>
             </div>         
           </div>
-          <div></div>
+          <div className="rounded-xl overflow-clip hidden md:block">
+            <Image src="/images/why.avif" alt="" width={500} height={400} className="object-cover h-full" />
+          </div>
           <div className="flex flex-col gap-3">
             <div className="p-8 bg-my-blacker rounded-xl border border-my-black flex flex-col gap-6">
               <div className="flex items-center gap-2">

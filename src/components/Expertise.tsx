@@ -13,7 +13,7 @@ function Expertise() {
         <div className="flex flex-col pt-8 gap-5">
           <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] bg-my-blacker rounded-2xl overflow-clip">
             <div className="bg-my-highlight w-full h-full">
-              <Image src="/images/placeholder.avif" alt="" width={350} height={350} className="object-cover w-full h-full" />
+              <Image src="/images/facebook.avif" alt="" width={350} height={350} className="object-cover w-full h-full" />
             </div>
             <div className="p-5 md:p-10 flex flex-col gap-6">
               <div className="flex gap-2 items-center">
@@ -68,7 +68,7 @@ function Expertise() {
               </div>
             </div>
             <div className="bg-my-highlight w-full h-full">
-              <Image src="/images/placeholder.avif" alt="Web Design" width={350} height={350} className="object-cover w-full h-full" />
+              <Image src="/images/webdesign.avif" alt="Web Design" width={350} height={350} className="object-cover w-full h-full" />
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] bg-my-blacker rounded-2xl overflow-hidden">
