@@ -14,7 +14,7 @@ function BlogHero() {
                     <Image src="/images/search.png" alt="search icon" width={25} height={25} className="inline-block mr-2 object-contain" />
                     <input type="text" name="search-blog" id="" className="outline-none focus:ring-my-ash focus:ring-1 px-4 py-2 rounded-full w-32 md:w-full" />
                     <div className="p-3 bg-my-deep-black border-my-black border rounded-full cursor-pointer flex items-center justify-center">
-                        <Image src="/images/search-arrow.png" alt="search button" width={20} height={20} className="" />
+                        <Image src="/images/search-arrow.png" alt="search button" width={25} height={25} className="" />
                     </div>
                 </div>
             </div>
