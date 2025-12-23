@@ -48,7 +48,6 @@ async function LatestBlogs() {
 
     const [latestPosts] = await Promise.all([
         sanityClient.fetch(latestPostsQuery),
-        sanityClient.fetch(mostReadPostsQuery),
     ]);
     const trimmedLatestPosts: Post[] = latestPosts.slice(0, 6);
 
