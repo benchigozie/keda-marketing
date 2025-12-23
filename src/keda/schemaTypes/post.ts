@@ -43,6 +43,22 @@ export default defineType({
       name: 'publishedAt',
       title: 'Published at',
       type: 'datetime',
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: 'excerpt',
+      title: 'Excerpt',
+      type: 'text',
+      rows: 3,
+      validation: (Rule) => Rule.max(160),
+      description: 'Short summary shown on blog cards',
+    }),
+    defineField({
+      name: 'views',
+      title: 'Views',
+      type: 'number',
+      initialValue: 0,
+      readOnly: true,
     }),
     defineField({
       name: 'body',

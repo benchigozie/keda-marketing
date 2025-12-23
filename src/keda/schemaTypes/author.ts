@@ -28,6 +28,12 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'role',
+      title: 'Role / Position',
+      type: 'string',
+      description: 'Author’s professional title or position, e.g., Founder, CEO, Content Writer',
+    }),
+    defineField({
       name: 'bio',
       title: 'Bio',
       type: 'array',
