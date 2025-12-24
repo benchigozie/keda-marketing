@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function ServicesOverview() {
     return (
@@ -18,10 +19,12 @@ function ServicesOverview() {
                                 <h3 className="text-2xl text-my-white">Video Editing</h3>
                             </div>
                             <p>Upgrade your online presence with video content. Let's help you streamline your entire video production process.</p>
-                            <div className="px-3 md:px-6 w-full py-2 md:py-3 rounded-full bg-my-black flex items-center justify-center cursor-pointer gap-0.5 md:gap-1 border border-my-black">
-                                <p>Learn More</p>
-                                <Image src="/images/grayarrow.png" alt="" width={18} height={18} className="inline-block ml-2 object-contain" />
-                            </div>
+                            <Link href="/services/video-editing">
+                                <div className="px-3 md:px-6 w-full py-2 md:py-3 rounded-full bg-my-black flex items-center justify-center cursor-pointer gap-0.5 md:gap-1 border border-my-black hover:bg-my-deep-black transition-colors duration-300">
+                                    <p>Learn More</p>
+                                    <Image src="/images/grayarrow.png" alt="" width={18} height={18} className="inline-block ml-2 object-contain" />
+                                </div>
+                            </Link>
                         </div>
                         <div className="divide-y divide-dashed divide-my-black flex flex-col justify-center">
                             <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-dashed divide-my-black">
