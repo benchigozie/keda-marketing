@@ -11,7 +11,9 @@ function Footer() {
                             <p>What are you waiting for?</p>
                             <p className="text-xl md:text-3xl text-my-white font-semibold">Let's help you get more <span className="text-my-lime">customers</span> and multiply your <span className="text-my-lime">revenue</span>.</p>
                             <div>
-                                <button className="mt-4 bg-my-lime py-2 md:py-4 px-4 md:px-6 rounded-full text-my-black flex justify-center gap-2 items-center"><span>Get it Touch</span><ArrowRight size={20} /></button>
+                                <Link href="#contact">
+                                <button className="mt-4 bg-my-lime py-2 md:py-4 px-4 md:px-6 rounded-full text-my-black flex justify-center gap-2 items-center transition-colors duration-300 hover:outline hover:outline-my-lime hover:text-my-lime hover:bg-my-blacker cursor-pointer"><span>Get it Touch</span><ArrowRight size={20} /></button>
+                                </Link>
                             </div>
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 md:gap-y-10 md:mr-28">

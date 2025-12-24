@@ -58,6 +58,10 @@ body {
   font-weight: 600;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .glass {
  /* backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);

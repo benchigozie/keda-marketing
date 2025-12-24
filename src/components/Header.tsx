@@ -65,7 +65,7 @@ function Header() {
                     <div className="h-0.5 w-6 bg-my-lime rounded-b-full"></div>
                     <div className="h-0.5 w-4 bg-my-lime rounded-b-full"></div>
                 </div>
-                <div className={`mt-3 duration-500 absolute top-full py-6 right-0 w-42 rounded-2xl bg-my-deep-black flex flex-col border border-my-black ${ menuState ? "opacity-100 visible" : "opacity-0 invisible" } lg:hidden`}>
+                <div onClick={toggleMenu} className={`mt-3 duration-500 absolute top-full py-6 right-0 w-42 rounded-2xl bg-my-deep-black flex flex-col border border-my-black ${ menuState ? "opacity-100 visible" : "opacity-0 invisible" } lg:hidden`}>
                     {navLinks.map((link) => {
                         return (
                             <Link

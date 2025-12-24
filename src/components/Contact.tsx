@@ -48,7 +48,7 @@ function Contact() {
     const [fbHovered, setFbHovered] = useState(false);
 
     return (
-        <section className="bg-my-deep-black py-12">
+        <section className="bg-my-deep-black py-12" id="contact">
             <div className="flex flex-col gap-6 max-w-6xl mx-auto px-3">
                 <div className="bg-my-blacker p-6 md:p-10 rounded-xl border-my-black border divide-y divide-my-black">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -142,7 +142,7 @@ function Contact() {
                                     />
 
                                     <button
-                                        className="text-my-deep-black px-5 py-2 bg-my-lime rounded-full font-semibold text-lg w-max"
+                                        className="text-my-deep-black px-5 py-2 bg-my-lime rounded-full font-semibold text-lg w-max transition-colors duration-300 hover:outline hover:outline-my-lime hover:text-my-lime hover:bg-my-blacker cursor-pointer"
                                         type="submit"
                                     >
                                         Submit

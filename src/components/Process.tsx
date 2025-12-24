@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 function Process() {
   return (
@@ -91,7 +92,9 @@ function Process() {
             <h3 className='text-my-white text-2xl md:text-3xl'>Start growing your company's <span className='text-my-lime'>revenue</span> today</h3>
           </div>
           <div>
-            <button className="mt-4 bg-my-lime py-3 md:py-4 px-5 md:px-6 rounded-full text-my-black flex justify-center gap-2 items-center whitespace-nowrap"><span>Get it Touch</span><ArrowRight size={20} /></button>
+            <Link href="/#contact">
+            <button className="mt-4 bg-my-lime py-3 md:py-4 px-5 md:px-6 rounded-full text-my-black flex justify-center gap-2 items-center whitespace-nowrap transition-colors duration-300 hover:outline hover:outline-my-lime hover:text-my-lime hover:bg-my-blacker cursor-pointer"><span>Get it Touch</span><ArrowRight size={20} /></button>
+            </Link>
           </div>
         </div>
       </div>
