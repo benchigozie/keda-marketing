@@ -6,6 +6,7 @@ import LatestSkeletonBlogs from "@/components/LatestSkeletonBlogs"
 import TopSkeletonBlogs from "@/components/TopSkeletonBlogs"
 import Contact from "@/components/Contact"
 import Footer from "@/components/Footer"
+import BlogCategories from "@/components/BlogCategories"
 
 function page() {
     return (
@@ -17,6 +18,7 @@ function page() {
             <Suspense fallback={<TopSkeletonBlogs />}>
                 <TopBlogs />
             </Suspense>
+            <BlogCategories />
             <Contact />
             <Footer />
         </div>
