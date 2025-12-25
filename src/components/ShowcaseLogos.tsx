@@ -3,7 +3,7 @@ import Image from "next/image"
 function ShowCaseLogos() {
   return (
     <section className="mx-auto">
-      <div className="max-w-[350px] md:max-w-2xl lg:max-w-4xl overflow-hidden relative">
+      <div className="max-w-62.5 md:max-w-2xl lg:max-w-4xl overflow-hidden relative">
         <div className="w-[200%] flex animate-scroll lg:animate-scroll-lg py-4">
           <div className="lg:w-1/2 w-3xl flex justify-between items-center px-8 flex-none">
             <Image src="/images/clientlogo1.avif" alt="" width={60} height={40} className="object-contain" />

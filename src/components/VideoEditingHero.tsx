@@ -11,14 +11,7 @@ function VideoEditingHero() {
                 <h2 className="font-bold text-3xl md:text-5xl text-my-white text-center">Transform Your Footage Into Stunning Visuals</h2>
                 <p className="text-center text-lg md:text-xl font-semibold max-w-4xl mx-auto">From raw clips to polished, high-impact videos. We edit, refine, and elevate your content to match your brand’s style and message.</p>
                 <div className="flex items-center mt-10 gap-8 flex-col">
-                    <iframe
-                        width="1120"
-                        height="630"
-                        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                        title="YouTube video player"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                    ></iframe>
+                <iframe src="https://player.vimeo.com/video/1149248769?context=Vimeo%5CController%5CApi%5CResources%5CVideoController.&h=2a613de3cc&s=b8363ce425ef48d998542162da9193d2befd589d_1766721467" allow="autoplay; fullscreen" className="w-full h-150"></iframe>
                     <button
                         className="text-my-deep-black px-6 py-4 bg-my-lime rounded-full font-semibold text-lg w-max"
                         type="submit"
