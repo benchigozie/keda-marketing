@@ -47,7 +47,7 @@ type Post = {
 async function LatestBlogs() {
 
     const [latestPosts] = await Promise.all([
-        sanityClient.fetch(latestPostsQuery),
+        sanityClient.fetch(latestPostsQuery, {}, { next: { revalidate: 60 } }),
     ]);
     const trimmedLatestPosts: Post[] = latestPosts.slice(0, 6);
 
@@ -64,7 +64,7 @@ async function LatestBlogs() {
                 <p className="text-center text-lg md:text-xl font-semibold max-w-4xl mx-auto">Our robust library of digital marketing content is available to teach you everything you need to know about digital marketing.</p>
                 <div className="mt-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 grid">
                         {trimmedLatestPosts.map((post: Post) => (
-                            <div className="bg-my-blacker border border-my-black rounded-2xl mx-auto w-full" key={post._id}>
+                            <div className="bg-my-blacker border h-max border-my-black rounded-2xl mx-auto w-full" key={post._id}>
                                 <Image src={urlFor(post.mainImage).width(400).height(200).url()} alt="Blog placeholder" width={300} height={200} className="rounded-2xl w-full h-50 object-cover" />
                                 <div className="divide-y divide-my-black p-6">
                                     <div className="flex flex-col gap-2 pb-6">
