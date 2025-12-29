@@ -1,14 +1,15 @@
+"use client"
+
 import Image from "next/image";
 
 type Props = {
-    searchTerm?: string;
     setSearchTerm: (term: string) => void;
     handleSearch: () => void;
 }
 
-function BlogHero( { searchTerm, setSearchTerm, handleSearch } : Props) {
+function BlogHero({ setSearchTerm, handleSearch }: Props) {
 
-    console.log("BlogHero rendered with searchTerm:", searchTerm);    
+    console.log("Rendering BlogHero");
 
     return (
         <section className="background-3d pb-12 pt-38 relative">
@@ -21,7 +22,13 @@ function BlogHero( { searchTerm, setSearchTerm, handleSearch } : Props) {
                 <p className="text-center text-lg md:text-xl font-semibold max-w-4xl mx-auto">Welcome to our blog, where we share experts insights on several topics in the digital marketing space.</p>
                 <div className="px-4 py-3 bg-my-blacker border border-my-black rounded-full max-w-md mx-auto mt-6 flex gap-3">
                     <Image src="/images/search.png" alt="search icon" width={25} height={25} className="inline-block mr-2 object-contain" />
-                    <input type="text" onChange={(e) => setSearchTerm(e.target.value)} name="search-blog" id="" className="outline-none focus:ring-my-ash focus:ring-1 px-4 py-2 rounded-full w-32 md:w-full" />
+                    <input type="text" onChange={(e) => setSearchTerm(e.target.value)} name="search-blog" id="" className="outline-none focus:ring-my-ash focus:ring-1 px-4 py-2 rounded-full w-32 md:w-full"
+                        onKeyDown={(e) => {
+                            if (e.key === "Enter") {
+                                e.preventDefault();
+                                handleSearch();
+                            }
+                        }} />
                     <button className="p-3 bg-my-deep-black border-my-black border rounded-full cursor-pointer flex items-center justify-center" onClick={handleSearch}>
                         <Image src="/images/search-arrow.png" alt="search button" width={25} height={25} className="" />
                     </button>

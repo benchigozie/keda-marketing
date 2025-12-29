@@ -46,6 +46,8 @@ type Post = {
 
 async function LatestBlogs() {
 
+    console.log("Rendering LatestBlogs");
+
     const [latestPosts] = await Promise.all([
         sanityClient.fetch(latestPostsQuery, {}, { next: { revalidate: 60 } }),
     ]);

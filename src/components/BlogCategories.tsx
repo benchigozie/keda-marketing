@@ -1,6 +1,9 @@
 import Image from "next/image";
 
 function BlogCategories() {
+
+    console.log("Rendering BlogCategories");
+
     return (
         <section className="bg-my-deep-black pt-24 pb-12 relative">
             <div className="flex flex-col gap-6 max-w-6xl mx-auto px-3">
