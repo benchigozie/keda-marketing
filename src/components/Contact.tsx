@@ -69,15 +69,27 @@ function Contact() {
 
         setSubmissionState("submitting");
 
-        await fetch("/api/contact", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(values),
-        });
+        try {
+            const res = await fetch("/api/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(values),
+            });
 
-        resetForm();
+            if (!res.ok) {
+                console.error("Server responded with an error:", res.status);
+                setSubmissionState("error");
+                return;
+            }
+            setSubmissionState("success");
+            resetForm();
+        } catch (err) {
+            console.error("Request failed:", err);
+            setSubmissionState("error");
+        }
+
     };
 
     const [igHovered, setIgHovered] = useState(false);
@@ -333,12 +345,12 @@ function Contact() {
                         </div>
                     </div>
                 }
-                  {
+                {
                     submissionState === "meeting" &&
-                <div className="">
-                    <Meeting />
-                </div>
-}
+                    <div className="">
+                        <Meeting />
+                    </div>
+                }
             </div>
         </section>
     )
