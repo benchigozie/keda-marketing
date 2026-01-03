@@ -63,14 +63,20 @@ html {
 }
 
 .glass {
- /* backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);*/
 
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
+
+.frosted-glass {
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(131, 126, 126, 0.3);
+  background-color: rgba(48, 44, 44, 0.1);
+}
+
 
 .box-pattern {
   background-color: var(--color-my-deep-black);

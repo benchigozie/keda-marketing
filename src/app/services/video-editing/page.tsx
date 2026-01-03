@@ -1,5 +1,6 @@
 import Contact from "@/components/Contact"
 import Footer from "@/components/Footer"
+import GetStartedVideo from "@/components/GetStartedVideo"
 import Pricing from "@/components/Pricing"
 import VideoEditingFeatures from "@/components/VideoEditingFeatures"
 import VideoEditingHero from "@/components/VideoEditingHero"
@@ -10,6 +11,7 @@ function page() {
     <div>
         <VideoEditingHero />
         <VideoShowcase />
+        <GetStartedVideo />
         <VideoEditingFeatures />
         <Pricing />
         <Contact />
