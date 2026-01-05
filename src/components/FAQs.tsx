@@ -57,7 +57,7 @@ function FAQs() {
                     <p className="text-my-lime">FAQs</p>
                 </div>
                 <h2 className="font-bold text-3xl md:text-5xl text-my-white text-center">Got Questions? We have got Answers</h2>
-                <p className="text-center text-lg md:text-xl font-semibold max-w-4xl mx-auto">Still you have any questions? Contact our Team via support@Oustand.digital.com</p>
+                <p className="text-center text-lg md:text-xl font-semibold max-w-4xl mx-auto">Still you have any questions? Contact our Team via support@kedamarketing.com.ng</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">
                     <div className="p-6 bg-my-blacker divide-my-black divide-y rounded-xl border border-my-black">
                         <h3 className="text-xl text-my-lime pb-6">Marketing Service Questions</h3>

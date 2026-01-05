@@ -5,6 +5,7 @@ import Pricing from "@/components/Pricing"
 import VideoEditingFeatures from "@/components/VideoEditingFeatures"
 import VideoEditingHero from "@/components/VideoEditingHero"
 import VideoShowcase from "@/components/VideoShowcase"
+import WallOfLove from "@/components/WallOfLove"
 import WhyOutsource from "@/components/WhyOutsource"
 
 function page() {
@@ -14,6 +15,7 @@ function page() {
         <VideoShowcase />
         <GetStartedVideo />
         <WhyOutsource />
+        <WallOfLove />
         <VideoEditingFeatures />
         <Pricing />
         <Contact />
