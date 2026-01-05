@@ -5,6 +5,7 @@ import Pricing from "@/components/Pricing"
 import VideoEditingFeatures from "@/components/VideoEditingFeatures"
 import VideoEditingHero from "@/components/VideoEditingHero"
 import VideoShowcase from "@/components/VideoShowcase"
+import WhyOutsource from "@/components/WhyOutsource"
 
 function page() {
   return (
@@ -12,6 +13,7 @@ function page() {
         <VideoEditingHero />
         <VideoShowcase />
         <GetStartedVideo />
+        <WhyOutsource />
         <VideoEditingFeatures />
         <Pricing />
         <Contact />

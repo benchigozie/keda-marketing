@@ -117,7 +117,7 @@ function Contact() {
                                     validationSchema={validationSchema}
                                     onSubmit={handleSubmit}
                                 >
-                                    <Form className="flex flex-col gap-4 max-w-md text-base mb-8">
+                                    <Form className="flex flex-col gap-4 md:max-w-md text-base mb-8 w-full">
 
                                         <label htmlFor="name" className="sr-only">Name</label>
                                         <Field

@@ -14,7 +14,7 @@ function VideoEditingHero() {
 
                 <div className="flex items-center mt-10 gap-8 flex-col">
                     <iframe src="https://player.vimeo.com/video/1151022418?context=Vimeo%5CController%5CApi%5CResources%5CVideoController.&h=2a613de3cc&s=b8363ce425ef48d998542162da9193d2befd589d_1766721467" allow="autoplay; fullscreen" className="aspect-video w-full"></iframe>
-                    <div className="flex gap-1 justify-center mt-6">
+                    <div className="flex gap-1 md:gap-3 justify-center mt-6">
                         <button
                             className="text-my-deep-black px-3 md:px-6 py-2 md:py-4 bg-my-lime rounded-full font-semibold md:text-lg w-max hover:bg-my-ash cursor-pointer"
                         >
