@@ -21,7 +21,7 @@ function Pricing() {
                             <li>Content Calender</li>
                         </ul>
                         <a href="https://paystack.shop/pay/4l6t5t8vju">
-                            <button className="mt-auto bg-my-lime text-my-black font-bold py-2 px-4 rounded hover:scale-102 transition duration-300 hover:cursor-pointer">Choose Lite</button>
+                            <button className="mt-auto bg-my-lime text-my-black w-full font-bold py-2 px-4 rounded hover:scale-102 transition duration-300 hover:cursor-pointer">Choose Lite</button>
                         </a>
                     </div>
                     <div className="bg-my-blacker border border-my-black rounded-xl px-6 md:px-10 py-14 my-3 flex flex-col gap-6">
