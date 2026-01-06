@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 function Pricing() {
     return (
@@ -61,6 +62,17 @@ function Pricing() {
                             <li>Content Repurposing.</li>
                         </ul>
                         <button className="mt-auto bg-my-lime text-my-black font-bold py-2 px-4 rounded hover:scale-102 transition duration-300 hover:cursor-pointer">Choose Premium</button>
+                    </div>
+                </div>
+                <div className="bg-my-blacker border border-my-lime rounded-4xl px-6 md:px-10 py-14 my-5 flex gap-6 justify-between items-center">
+                    <div className="flex flex-col gap-4">
+                        <h3 className="text-2xl text-my-white font-bold">Custom Package</h3>
+                        <p className="font-bold text-xl max-w-2xl">Perfect if you have specific needs or a fixed budget. We agree on a fair, flexible price tailored to your goals.</p>
+                    </div>
+                    <div className="flex justify-center items-center">
+                        <button className="mt-auto bg-my-black text-my-lime font-bold py-5 px-6 rounded-full border border-my-lime hover:bg-my-highlight hover:scale-102 transition duration-300 hover:cursor-pointer">
+                            <Link href="/services/video-editing/#contact">Get a Custom Quote</Link>
+                        </button>
                     </div>
                 </div>
             </div>

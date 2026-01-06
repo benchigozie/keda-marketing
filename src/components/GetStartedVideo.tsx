@@ -1,11 +1,17 @@
-import Image from 'next/image'
+"use client"
+
+import { scrollToId } from '@/utils/scrollToId'
 import ProgressBar from './ProgressBar'
 import { Gift } from 'lucide-react'
+import Link from 'next/link'
+
+
 
 
 function GetStartedVideo() {
+
   return (
-    <section className="background-3d pb-12 pt-38 relative px-3">
+    <section className="background-3d pb-12 pt-38 relative px-3" id='get-started'>
       <div className="flex flex-col gap-6 max-w-6xl mx-auto p-6 md:p-16 bg-my-blacker border border-my-black rounded-3xl">
         <h2 className="font-bold text-4xl md:text-6xl text-my-white text-center">Start For Free <span className='text-my-lime block'>Zero Risk, 100%</span> Value</h2>
         <p className="text-center text-lg md:text-xl font-semibold max-w-4xl mx-auto">We help you turn raw ideas into scroll-stopping, audience-focused videos while you focus on growing your business.</p>
@@ -41,7 +47,9 @@ function GetStartedVideo() {
               </div>
               <ProgressBar progress={60} />
             </div>
-            <button className='bg-my-lime w-full px-4 md:px-6 py-3 md:py-4 rounded-full text-my-blacker hover:shadow-xl transition-shadow duration-200 hover:cursor-pointer shadow-my-lime/30'>Get Started For Free</button>
+            <button onClick={() => scrollToId("contact")} className='bg-my-lime w-full px-4 md:px-6 py-3 md:py-4 rounded-full text-my-blacker hover:shadow-xl transition-shadow duration-200 hover:cursor-pointer shadow-my-lime/30'>
+              Get Started For Free
+            </button>
             <p className='text-sm animate-pulse font-bold'>CLICK ABOVE TO SECURE YOUR SPOT</p>
           </div>
         </div>
