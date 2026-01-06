@@ -20,7 +20,9 @@ function Pricing() {
                             <li>8 Short Scripts</li>
                             <li>Content Calender</li>
                         </ul>
-                        <button className="mt-auto bg-my-lime text-my-black font-bold py-2 px-4 rounded hover:scale-102 transition duration-300 hover:cursor-pointer">Choose Lite</button>
+                        <a href="https://paystack.shop/pay/4l6t5t8vju">
+                            <button className="mt-auto bg-my-lime text-my-black font-bold py-2 px-4 rounded hover:scale-102 transition duration-300 hover:cursor-pointer">Choose Lite</button>
+                        </a>
                     </div>
                     <div className="bg-my-blacker border border-my-black rounded-xl px-6 md:px-10 py-14 my-3 flex flex-col gap-6">
                         <h3 className="text-2xl text-my-lime font-bold">Basic</h3>
@@ -32,7 +34,9 @@ function Pricing() {
                             <li>2 Long Scripts</li>
                             <li>Content Calender</li>
                         </ul>
-                        <button className="mt-auto bg-my-lime text-my-black font-bold py-2 px-4 rounded hover:scale-102 transition duration-300 hover:cursor-pointer">Choose Basic</button>
+                        <a href="https://paystack.shop/pay/19ncm6ti7-">
+                            <button className="mt-auto bg-my-lime text-my-black font-bold py-2 px-4 w-full rounded hover:scale-102 transition duration-300 hover:cursor-pointer">Choose Basic</button>
+                        </a>
                     </div>
                     <div className="bg-my-blacker border border-my-black rounded-xl px-6 md:px-10 py-14 my-3 flex flex-col gap-6">
                         <h3 className="text-2xl text-my-lime font-bold">Standard Package</h3>
@@ -44,7 +48,9 @@ function Pricing() {
                             <li>2 Long Scripts</li>
                             <li>Content Calender</li>
                         </ul>
-                        <button className="mt-auto bg-my-lime text-my-black font-bold py-2 px-4 rounded hover:scale-102 transition duration-300 hover:cursor-pointer">Choose Standard</button>
+                        <a href="https://paystack.shop/pay/9259yyz8zv" target="_blank" rel="noopener noreferrer">
+                            <button className="mt-auto bg-my-lime text-my-black font-bold py-2 px-4 rounded hover:scale-102 transition duration-300 hover:cursor-pointer w-full">Choose Standard</button>
+                        </a>
                     </div>
                     <div className="bg-my-blacker border border-my-black rounded-xl px-6 md:px-10 py-14 my-3 flex flex-col gap-6 md:w-max">
                         <h3 className="text-2xl text-my-lime font-bold">Premium</h3>
@@ -61,7 +67,9 @@ function Pricing() {
                             <li>Custom Content Management System.</li>
                             <li>Content Repurposing.</li>
                         </ul>
-                        <button className="mt-auto bg-my-lime text-my-black font-bold py-2 px-4 rounded hover:scale-102 transition duration-300 hover:cursor-pointer">Choose Premium</button>
+                        <a href="https://paystack.shop/pay/j6a8uhqmrk" target="_blank" rel="noopener noreferrer">
+                            <button className="mt-auto bg-my-lime text-my-black font-bold py-2 px-4 rounded hover:scale-102 transition duration-300 hover:cursor-pointer w-full">Choose Premium</button>
+                        </a>
                     </div>
                 </div>
                 <div className="bg-my-blacker border border-my-lime rounded-4xl px-6 md:px-10 py-14 my-5 flex gap-6 justify-between items-center">
