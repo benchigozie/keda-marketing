@@ -1,11 +1,11 @@
-function formatEventDate(dateString: string) {
+function formatEventDate(dateString: string, format: "long" | "short") {
     const date = new Date(dateString);
 
     const  day = date.getDate();
-    const  month = date.toLocaleString("en-US", { month: "short" });
+    const  month = date.toLocaleString("en-US", { month: `${format}` });
     const  year = date.getFullYear();
 
-    return `${day} of ${month}, ${year}`;
+    return { day, month, year  };
 
   };
 

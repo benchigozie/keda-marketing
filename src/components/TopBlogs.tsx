@@ -44,7 +44,10 @@ async function TopBlogs() {
     console.log("Rendering TopBlogs");
 
     const [mostReadPosts] = await Promise.all([
-        sanityClient.fetch(mostReadPostsQuery, {}, { next: { revalidate: 60 } }),
+        sanityClient.fetch(mostReadPostsQuery, {}, { next: { 
+            tags: ["posts", "posts:most-read"],
+            revalidate: 300,
+        } }),
     ]);
 
     const trimmedPosts: Post[] = mostReadPosts.slice(0, 6);

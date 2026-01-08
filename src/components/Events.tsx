@@ -8,7 +8,9 @@ type Event = {
     _id: string;
     title: string;
     date: string;
-    slug: string;
+    slug: {
+        current: string;
+    };
     time: string;
     description: string;
     image: any;
@@ -25,6 +27,7 @@ export const eventsQuery = `
   title,
   date,
   time,
+  slug,
   description,
   image,
   host->{
@@ -37,7 +40,8 @@ export const eventsQuery = `
 
 async function Events() {
 
-    const events: Event[] = await sanityClient.fetch(eventsQuery);
+    const events: Event[] = await sanityClient.fetch(eventsQuery, {}, { next: { revalidate: 60 } });
+
     console.log("Fetched events:", events);
 
     return (
@@ -46,9 +50,9 @@ async function Events() {
                 events.length === 0 ? (
                     <p className="text-center text-my-white">No upcoming events.</p>
                 ) : (
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 mb-8">
                         {events.map((event) => (
-                            <Link href={`/events/${event.slug}`} key={event._id}>
+                            <Link href={`/events/${event.slug.current}`} key={event._id}>
                                 <div key={event._id} className="bg-my-blacker border border-my-black rounded-xl p-6 flex flex-col gap-2 hover:shadow-xl shadow-my-lime/40 transition-shadow duration-300 hover:cursor-pointer">
                                     <Image
                                         src={urlFor(event.image).width(600).url()}
@@ -58,7 +62,7 @@ async function Events() {
                                         className="rounded-lg object-cover"
                                     />
                                     <h3 className="text-2xl text-my-lime font-bold">{event.title}</h3>
-                                    <p className="text-my-white font-semibold">{formatEventDate(event.date)} at {event.time}</p>
+                                    <p className="text-my-white font-semibold">{formatEventDate(event.date, "long").day} of {formatEventDate(event.date, "long").month} at {event.time}</p>
                                     {event.host && (
                                         <div className="mt-auto pt-4 border-t border-my-black">
                                             <h4 className="font-bold">Host</h4>

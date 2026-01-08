@@ -49,6 +49,14 @@ export default defineType({
     }),
 
     defineField({
+      name: "venue",
+      title: "venue",
+      type: "string",
+      description: "e.g 123 Main St, City, Country",
+      validation: (Rule) => Rule.required(),
+    }),
+
+    defineField({
         name: "host",
         title: "Event Host",
         type: "reference",
