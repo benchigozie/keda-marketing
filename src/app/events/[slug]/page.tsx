@@ -20,7 +20,7 @@ const eventQuery =
   title,
   description,
   date,
-  location,
+  venue,
   time,
   image,
   host
@@ -32,7 +32,7 @@ type Event = {
     description: PortableTextBlock[];
     date: string;
     time: string;
-    location?: string;
+    venue?: string;
     image?: any;
     host?: {
         name: string;
@@ -66,9 +66,9 @@ async function page({ params }: PageProps) {
                         </div>
                     </div>
                     <div className="flex items-center gap-4 mt-2">
-                        <Image src="/images/gps.png" alt="" width={50} height={50} />
+                        <Image src="/images/gps.png" alt="" width={35} height={35} />
                         <div>
-                            <p>{event.location}</p>
+                            <p>{event.venue}</p>
                         </div>
                     </div>
                 </div>

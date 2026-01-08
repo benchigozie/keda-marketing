@@ -23,9 +23,6 @@ export async function POST(req: Request) {
       message,
     } = body;
 
-    console.log("before pages creation");
-    console.log("Notion Key exists:", !!process.env.NOTION_API_KEY);
-    console.log("Database ID:", process.env.NOTION_DATABASE_ID);
       const response = await notion.pages.create({
         parent: {
           database_id: process.env.NOTION_DATABASE_ID!,

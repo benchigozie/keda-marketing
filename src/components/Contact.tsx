@@ -7,7 +7,7 @@ import { MoveUpRight } from "lucide-react";
 import { useState } from "react";
 import { PuffLoader } from "react-spinners";
 import { Check, X } from "lucide-react";
-import { Meeting, Meetings } from "./Meeting";
+import { Meeting } from "./Meeting";
 
 
 
