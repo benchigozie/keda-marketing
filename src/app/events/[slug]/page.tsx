@@ -1,5 +1,5 @@
 import { sanityClient } from "@/lib/sanityClient";
-import formatEventDate from "@/utils/formatDate";
+import formatDate from "@/utils/formatDate";
 import { urlFor } from "@/lib/sanityImage";
 import Image from "next/image";
 import CalenderIcon from "@/components/CalenderIcon";
@@ -57,11 +57,11 @@ async function page({ params }: PageProps) {
             <div className="flex flex-col gap-6 max-w-4xl mx-auto px-3 pb-12 pt-38">
                 <Image src={urlFor(event.image).width(800).url()} alt={event.title} width={800} height={400} className="rounded-lg object-cover mx-auto w-full" />
                 <h1 className="text-my-white text-4xl md:text-6xl font-bold text-center mt-4">{event.title}</h1>
-                <div className="flex flex-col md:flex-row gap-x-16">
+                <div className="flex flex-col md:flex-row gap-y-4 gap-x-16">
                     <div className="flex items-center gap-4 mt-2">
-                        <CalenderIcon day={formatEventDate(event.date, "short").day} month={formatEventDate(event.date, "short").month} />
+                        <CalenderIcon day={formatDate(event.date, "short").day} month={formatDate(event.date, "short").month} />
                         <div>
-                            <p>{formatEventDate(event.date, "long").day} of {formatEventDate(event.date, "long").month}</p>
+                            <p>{formatDate(event.date, "long").day} of {formatDate(event.date, "long").month}</p>
                             <p>{event.time}</p>
                         </div>
                     </div>
@@ -82,7 +82,7 @@ async function page({ params }: PageProps) {
                     </div>
                 </div>
                 <div className="divide-y divide-my-black/50 space-y-6 mt-6">
-                    <h2 className="text-my-white text-3xl font-bold mb-4">About Event</h2>
+                    <h2 className="text-my-white text-center text-3xl font-bold mb-4">About Event</h2>
                     <PortableText value={event.description} />
                 </div>
             </div>

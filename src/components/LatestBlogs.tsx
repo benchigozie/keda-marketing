@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { sanityClient } from "@/lib/sanityClient";
 import { urlFor } from "@/lib/sanityImage";
+import { Link } from "lucide-react";
 
 
 const latestPostsQuery = `
@@ -49,10 +50,12 @@ async function LatestBlogs() {
     console.log("Rendering LatestBlogs");
 
     const [latestPosts] = await Promise.all([
-        sanityClient.fetch(latestPostsQuery, {}, { next: { 
-            tags: ["posts"],
-            revalidate: 3600 
-        } }),
+        sanityClient.fetch(latestPostsQuery, {}, {
+            next: {
+                tags: ["posts"],
+                revalidate: 3600
+            }
+        }),
     ]);
     const trimmedLatestPosts: Post[] = latestPosts.slice(0, 6);
 
@@ -68,8 +71,9 @@ async function LatestBlogs() {
                 <h2 className="font-bold text-3xl md:text-5xl text-my-white text-center max-w-3xl mx-auto">Discover More</h2>
                 <p className="text-center text-lg md:text-xl font-semibold max-w-4xl mx-auto">Our robust library of digital marketing content is available to teach you everything you need to know about digital marketing.</p>
                 <div className="mt-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 grid">
-                        {trimmedLatestPosts.map((post: Post) => (
-                            <div className="bg-my-blacker border h-max border-my-black rounded-2xl mx-auto w-full" key={post._id}>
+                    {trimmedLatestPosts.map((post: Post) => (
+                        <Link href={`/blogs/${post.slug}`} key={post._id}>
+                            <div className="bg-my-blacker border h-max border-my-black rounded-2xl mx-auto w-full hover:shadow-my-lime/40 hover:cursor-pointer hover:shadow-lg transition duration-300" key={post._id}>
                                 <Image src={urlFor(post.mainImage).width(400).height(200).url()} alt="Blog placeholder" width={300} height={200} className="rounded-2xl w-full h-50 object-cover" />
                                 <div className="divide-y divide-my-black p-6">
                                     <div className="flex flex-col gap-2 pb-6">
@@ -100,8 +104,10 @@ async function LatestBlogs() {
                                         </div>
                                     </div>
                                 </div>
-                            </div>)
-                        )}
+                            </div>
+                        </Link>
+                    )
+                    )}
                 </div>
                 <div className="mx-auto mt-4 md:mt-7">
                     <button className="px-5 py-3 rounded-full border-my-black bg-my-blacker border cursor-pointer">View More</button>

@@ -1,4 +1,4 @@
-function formatEventDate(dateString: string, format: "long" | "short") {
+function formatDate(dateString: string, format: "long" | "short") {
     const date = new Date(dateString);
 
     const  day = date.getDate();
@@ -9,4 +9,4 @@ function formatEventDate(dateString: string, format: "long" | "short") {
 
   };
 
-export default formatEventDate;
+export default formatDate;

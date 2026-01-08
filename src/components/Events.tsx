@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { sanityClient } from "@/lib/sanityClient";
 import { urlFor } from "@/lib/sanityImage";
-import formatEventDate from "@/utils/formatDate";
+import formatDate from "@/utils/formatDate";
 import Link from "next/link";
 
 type Event = {
@@ -62,7 +62,7 @@ async function Events() {
                                         className="rounded-lg object-cover"
                                     />
                                     <h3 className="text-2xl text-my-lime font-bold">{event.title}</h3>
-                                    <p className="text-my-white font-semibold">{formatEventDate(event.date, "long").day} of {formatEventDate(event.date, "long").month} at {event.time}</p>
+                                    <p className="text-my-white font-semibold">{formatDate(event.date, "long").day} of {formatDate(event.date, "long").month} at {event.time}</p>
                                     {event.host && (
                                         <div className="mt-auto pt-4 border-t border-my-black">
                                             <h4 className="font-bold">Host</h4>
