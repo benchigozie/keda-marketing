@@ -9,28 +9,47 @@ import { Check, X } from "lucide-react";
 interface FormValues {
   name: string;
   email: string;
+  phone: string;
+  location: string;
+  status: string;
+  userType: string;
+  referralSource: string;
 }
 
 interface Props {
   eventId: string;
 }
 
-const initialValues: FormValues = { name: "", email: "" };
+const initialValues: FormValues = {
+  name: "",
+  email: "",
+  phone: "",
+  location: "",
+  status: "New Lead",
+  userType: "",
+  referralSource: "",
+};
 
 const validationSchema = Yup.object({
   name: Yup.string().required("Enter your name"),
   email: Yup.string().email("Enter a valid email").required("Email is required"),
+  phone: Yup.string().required("Phone number is required"),
+  location: Yup.string(),
+  status: Yup.string(),
+  userType : Yup.string(),
+  referralSource : Yup.string(),
+
 });
 
 type SubmissionState = "idle" | "submitting" | "success" | "error";
 
-export default function EventRegistrationForm({ eventId }: Props) {
+function EventRegistrationForm({ eventId }: Props) {
   const [submissionState, setSubmissionState] = useState<SubmissionState>("idle");
 
   const handleSubmit = async (values: FormValues, { resetForm }: any) => {
     setSubmissionState("submitting");
     try {
-      const res = await fetch(`/api/events/${eventId}/register`, {
+      const res = await fetch(`/api/event/${eventId}/register`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(values),
@@ -77,20 +96,111 @@ export default function EventRegistrationForm({ eventId }: Props) {
       onSubmit={handleSubmit}
     >
       <Form className="flex flex-col gap-4">
+        <label htmlFor="name" className="sr-only">Name</label>
         <Field
+          type="text"
+          id="name"
           name="name"
+          className="focus:outline focus:outline-my-ash bg-my-deep-black py-2 px-4 rounded-md placeholder-my-ash"
           placeholder="Name"
-          className="bg-my-deep-black text-white px-4 py-2 rounded focus:outline focus:outline-my-lime"
         />
-        <ErrorMessage name="name" component="p" className="text-red-500 text-sm" />
+        <ErrorMessage
+          name="name"
+          component="p"
+          className="text-red-500 text-sm"
+        />
 
+        <label htmlFor="email" className="sr-only">Email</label>
         <Field
-          name="email"
           type="email"
+          id="email"
+          name="email"
+          className="focus:outline focus:outline-my-ash bg-my-deep-black py-2 px-4 rounded-md placeholder-my-ash"
           placeholder="Email"
-          className="bg-my-deep-black text-white px-4 py-2 rounded focus:outline focus:outline-my-lime"
         />
-        <ErrorMessage name="email" component="p" className="text-red-500 text-sm" />
+        <ErrorMessage
+          name="email"
+          component="p"
+          className="text-red-500 text-sm"
+        />
+
+        <label htmlFor="phone" className="sr-only">Name</label>
+        <Field
+          type="text"
+          id="phone"
+          name="phone"
+          className="focus:outline focus:outline-my-ash bg-my-deep-black py-2 px-4 rounded-md placeholder-my-ash"
+          placeholder="Phone Number"
+        />
+        <ErrorMessage
+          name="phone"
+          component="p"
+          className="text-red-500 text-sm"
+        />
+
+        <label htmlFor="location" className="sr-only">Name</label>
+        <Field
+          type="text"
+          id="location"
+          name="location"
+          className="focus:outline focus:outline-my-ash bg-my-deep-black py-2 px-4 rounded-md placeholder-my-ash"
+          placeholder="Your Location"
+        />
+        <ErrorMessage
+          name="location"
+          component="p"
+          className="text-red-500 text-sm"
+        />
+
+        <label htmlFor="userType" className="sr-only">Service</label>
+        <Field
+          type="text"
+          as="select"
+          id="userType"
+          name="userType"
+          className="focus:outline focus:outline-my-ash bg-my-deep-black py-2 px-4 rounded-md placeholder-my-ash [appearance:textfield]
+         [&::-webkit-inner-spin-button]:hidden 
+         [&::-webkit-outer-spin-button]:hidden"
+          placeholder="Which of These Best Describes You?"
+        >
+          <option value="">Which of These Best Describes You</option>
+          <option value="Business Owner/Founder">Business Owner/Founder</option>
+          <option value="Freelancer">Freelancer</option>
+          <option value="Student">Student</option>
+          <option value="Newbie">Newbie</option>
+        </Field>
+        <ErrorMessage
+          name="userType"
+          component="p"
+          className="text-red-500 text-sm"
+        />
+
+        <label htmlFor="referralSource" className="sr-only">Service</label>
+        <Field
+          type="text"
+          as="select"
+          id="referralSource"
+          name="referralSource"
+          className="focus:outline focus:outline-my-ash bg-my-deep-black py-2 px-4 rounded-md placeholder-my-ash [appearance:textfield]
+         [&::-webkit-inner-spin-button]:hidden 
+         [&::-webkit-outer-spin-button]:hidden"
+          placeholder="How Did You Hear About Us?"
+        >
+          <option value="">How Did You Hear About Us?</option>
+          <option value="Phyisical Meeting">Phyisical Meeting</option>
+          <option value="WhatsApp">WhatsApp</option>
+          <option value="Facebook">Facebook</option>
+          <option value="Instagram">Instagram</option>
+          <option value="YouTube">YouTube</option>
+          <option value="TikTok">TikTok</option>
+          <option value="Referral">Referral</option>
+        </Field>
+        <ErrorMessage
+          name="referallSource"
+          component="p"
+          className="text-red-500 text-sm"
+        />
+
 
         <button
           type="submit"
@@ -102,3 +212,5 @@ export default function EventRegistrationForm({ eventId }: Props) {
     </Formik>
   );
 }
+
+export default EventRegistrationForm;

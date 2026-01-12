@@ -87,7 +87,7 @@ async function page({ params }: PageProps) {
                     </div>
                     <Image src={urlFor(post.mainImage).width(800).url()} alt={post.title} width={800} height={400} className="rounded-lg object-cover mx-auto w-full" />
                 </div>
-                <div className="prose prose-invert max-w-none mt-6 text-lg">
+                <div className="prose prose-invert  prose-ul:marker:text-my-lime prose-ol:marker:text-my-lime max-w-none mt-6 text-lg">
                     <PortableText value={post.body} />
                 </div>
             </div>

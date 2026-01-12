@@ -15,6 +15,7 @@ interface ContactFormValues {
     name: string;
     email: string;
     companyName?: string;
+    companyWebsite?: string;
     budget: string | null;
     service: string;
     phone: string;
@@ -28,6 +29,7 @@ const initialValues: ContactFormValues = {
     name: "",
     email: "",
     companyName: "",
+    companyWebsite: "",
     budget: "",
     message: "",
     service: "",
@@ -44,6 +46,7 @@ const validationSchema = Yup.object({
         .email("Enter a valid email address")
         .required("Email is required"),
     companyName: Yup.string(),
+    companyWebsite: Yup.string(),
     budget: Yup.number()
         .transform((value, originalValue) =>
             originalValue === "" ? undefined : Number(originalValue)
@@ -175,6 +178,20 @@ function Contact() {
                                             className="text-red-500 text-sm"
                                         />
 
+                                        <label htmlFor="companyWebsite" className="sr-only">Name</label>
+                                        <Field
+                                            type="text"
+                                            id="companyWebsite"
+                                            name="companyWebsite"
+                                            className="focus:outline focus:outline-my-ash bg-my-deep-black py-2 px-4 rounded-md placeholder-my-ash"
+                                            placeholder="Company Website"
+                                        />
+                                        <ErrorMessage
+                                            name="companyWebsite"
+                                            component="p"
+                                            className="text-red-500 text-sm"
+                                        />
+
                                         <label htmlFor="budget" className="sr-only">Name</label>
                                         <Field
                                             type="number"
@@ -204,8 +221,12 @@ function Contact() {
                                         >
                                             <option value="">Select a service</option>
                                             <option value="Video Editing">Video Editing</option>
-                                            <option value="Facebook Ads">Facebook Ads</option>
-                                            <option value="Website Design">Website Design</option>
+                                            <option value="Advertising">Advertising</option>
+                                            <option value="AI Automation">AI Automation</option>
+                                            <option value="Email Marketing">Email Marketing</option>
+                                            <option value="Digital Marketing">Digital Marketing</option>
+                                            <option value="Web Development">Web Development</option>
+                                            <option value="Social media Management">Social media Management</option>
                                         </Field>
                                         <ErrorMessage
                                             name="service"

@@ -17,6 +17,7 @@ export async function POST(req: Request) {
       name,
       email,
       companyName,
+      companyWebsite,
       budget,
       service,
       phone,
@@ -45,8 +46,8 @@ export async function POST(req: Request) {
           },
         
           Service: {
-            status: {
-              name: service,
+            select: {
+              name: service, 
             },
           },
         
