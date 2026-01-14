@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { sanityClient } from "@/lib/sanityClient";
 import { urlFor } from "@/lib/sanityImage";
-import { Link } from "lucide-react";
+import Link from "next/link";
 
 
 const latestPostsQuery = `
@@ -58,6 +58,7 @@ async function LatestBlogs() {
         }),
     ]);
     const trimmedLatestPosts: Post[] = latestPosts.slice(0, 6);
+    console.log("Latest posts fetched:", trimmedLatestPosts);
 
 
     return (
