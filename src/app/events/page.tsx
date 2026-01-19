@@ -3,6 +3,13 @@ import Events from "@/components/Events";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Events",
+  description: "Stay updated with Keda Marketing's latest events to help you grow your real estate business.",
+};
+
 function page() {
 
     return (

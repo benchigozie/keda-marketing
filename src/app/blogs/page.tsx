@@ -10,7 +10,12 @@ import Footer from "@/components/Footer"
 import BlogCategories from "@/components/BlogCategories"
 import SearchResults from "@/components/SearchResults"
 import BlogSearchClient from "@/components/BlogSearchClient"
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Marketing Blog",
+  description: "Insights on marketing and business growth strategies.",
+};
 
 
 
