@@ -45,7 +45,7 @@ export default function RootLayout({
         className="antialiased text-base md:text-lg"
       >
         <Header />
-        
+        <AnalyticsTracker />
         {children}
       </body>
     </html>
