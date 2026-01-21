@@ -43,7 +43,7 @@ function WallOfLove() {
                 </div>
                 <h2 className="font-bold text-3xl md:text-5xl text-my-white text-center max-w-3xl mx-auto">Results That <span className="text-my-lime">Speak</span></h2>
                 <div className="mt-11">
-                    <div className="border overflow-hidden flex border-my-black rounded-3xl relative h-180 md:h-120">
+                    <div className="border overflow-hidden flex border-my-black rounded-3xl relative h-120 md:h-120">
                         <div
                             onClick={
                                 () => {
