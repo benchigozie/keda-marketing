@@ -27,7 +27,7 @@ function WallOfLove() {
             imageUrl: "/images/billy.avif"
         },
         {
-            text: "It is Brilliant work as Usual!",
+            text: "It is Brilliant work as Usual! Keep it up",
             name: "Olubunmi Fabanwo",
             imageUrl: "/images/Olubunmi.jpeg"
         }
