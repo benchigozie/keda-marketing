@@ -9,7 +9,7 @@ import { AnalyticsTracker } from "@/components/AnalyticsTracker";
 
 export const metadata: Metadata = {
   title: {
-    default: "Keda Marketing || Africa's No 1 Real Estate Marketing AgencyKeda Marketing | Real Estate Growth Agency",
+    default: "Keda Marketing || Building Billion Dollar Brands with Digital Marketing",
     template: "%s | Keda Marketing",
   },
   description: "Keda Marketing offers Facebook advertising, website design, video editing, digital marketing, content management, data analysis, and AI automated workflows.",
