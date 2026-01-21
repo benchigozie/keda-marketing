@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
 import { usePathname } from "next/navigation"
+import { scrollToId } from "@/utils/scrollToId"
 
 type NavLink = {
     name: string
@@ -14,7 +15,7 @@ function Header() {
 
     const pathname = usePathname();
 
-    const [ menuState, setMenuState ] = useState<boolean>(false);
+    const [menuState, setMenuState] = useState<boolean>(false);
 
     const toggleMenu = () => {
         setMenuState(!menuState);
@@ -58,14 +59,16 @@ function Header() {
                     })}
                 </div>
                 <div className="lg:flex hidden">
-                    <button className="text-my-deep-black px-7 py-4 bg-my-lime rounded-full font-semibold text-lg">Contact Us</button>
+                    <button onClick={() => scrollToId("contact")} className="text-my-deep-black px-7 py-4 bg-my-lime rounded-full font-semibold text-lg hover:bg-my-blacker transition-colors duration-300 hover:outline hover:outline-my-lime hover:text-my-lime hover:cursor-pointer">
+                        Contact Us
+                    </button>
                 </div>
                 <div onClick={toggleMenu} className="flex flex-col space-y-1 cursor-pointer lg:hidden items-end mr-5">
                     <div className="h-0.5 w-6 bg-my-lime rounded-b-full"></div>
                     <div className="h-0.5 w-6 bg-my-lime rounded-b-full"></div>
                     <div className="h-0.5 w-4 bg-my-lime rounded-b-full"></div>
                 </div>
-                <div onClick={toggleMenu} className={`mt-3 duration-500 absolute top-full py-6 right-0 w-42 rounded-2xl bg-my-deep-black flex flex-col border border-my-black ${ menuState ? "opacity-100 visible" : "opacity-0 invisible" } lg:hidden`}>
+                <div onClick={toggleMenu} className={`mt-3 duration-500 absolute top-full py-6 right-0 w-42 rounded-2xl bg-my-deep-black flex flex-col border border-my-black ${menuState ? "opacity-100 visible" : "opacity-0 invisible"} lg:hidden`}>
                     {navLinks.map((link) => {
                         return (
                             <Link

@@ -17,19 +17,19 @@ function WallOfLove() {
 
     const testimonials: TestimonialProp[] = [
         {
-            text: "The turnaround time is insane. I finally have a life outside of Premiere Pro, and my retention rates have never been higher. It's like having a full production team in my pocket.",
-            name: "Alex Johnson",
-            imageUrl: "/images/testimonial1.jpg"
+            text: "The work you do for my brand, I do not take it for granted. I am looking forward to future partnerships.",
+            name: "Emmanuel Eribo",
+            imageUrl: "/images/emmanuel.avif",
         },
         {
-            text: "Outsourcing my video editing to Oustand was the best decision I've made for my business. Their team understands my vision and consistently delivers high-quality content that resonates with my audience.",
-            name: "Samantha Lee",
-            imageUrl: "/images/testimonial2.jpg"
+            text: "His videos are very very solid. I couldn't believe it when I saw it. You need to let more people know what you have to offer.",
+            name: "Bill Eddy Saliu",
+            imageUrl: "/images/billy.avif"
         },
         {
-            text: "Thanks to Oustand, I've been able to scale my content production without sacrificing quality. Their editors are true professionals who bring creativity and expertise to every project.",
-            name: "Michael Smith",
-            imageUrl: "/images/testimonial3.jpg"
+            text: "It is Brilliant work as Usual!",
+            name: "Olubunmi Fabanwo",
+            imageUrl: "/images/Olubunmi.jpeg"
         }
     ]
     return (
@@ -75,7 +75,7 @@ function WallOfLove() {
                                     <div className="mt-10 flex items-center gap-4">
                                         <div className="flex flex-col items-center gap-2 mx-auto">
                                             <div className="w-16 h-16 relative rounded-full overflow-hidden">
-                                                <Image src="/images/testimonial1.jpg" alt="Client Photo" fill className="object-cover" />
+                                                <Image src={testimonial.imageUrl} alt="Client Photo" fill className="object-cover" />
                                             </div>
                                             <p className="font-bold mt-2 text-my-white text-xl">{testimonial.name}</p>
                                             <p className="">Content Creator</p>

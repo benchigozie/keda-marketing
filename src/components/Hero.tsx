@@ -1,5 +1,6 @@
 "use client";
 
+import { scrollToId } from '@/utils/scrollToId';
 import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
 import Image from 'next/image';
@@ -59,8 +60,8 @@ function Hero() {
                     </motion.div>
                     <motion.h1 variants={child} className="max-w-200 text-center text-4xl md:text-6xl font-bold text-my-white">Get More Customers and Increase Your Revenue in Just 90 Days</motion.h1>
                     <motion.p variants={child} className="text-xl font-semibold">Amplify your company's reach and increase your revenue in 3 months.</motion.p>
-                    <motion.button variants={child} className="text-my-deep-black px-6 py-3 md:px-7 md:py-4 bg-my-lime rounded-full hover:bg-my-blacker font-semibold text-lg transition-colors duration-300 hover:outline hover:outline-my-lime hover:text-my-lime">
-                        <Link href="#contact">Get Started Today</Link>
+                    <motion.button variants={child} onClick={ () => scrollToId("contact") } className="text-my-deep-black px-6 py-3 md:px-7 md:py-4 bg-my-lime rounded-full hover:bg-my-blacker font-semibold text-lg transition-colors duration-300 hover:outline hover:outline-my-lime hover:text-my-lime hover:cursor-pointer">
+                        Get Started Today
                     </motion.button>
                 </motion.div>
                 <div className="absolute bottom-0 bg-linear-to-t from-my-deep-black/90 to-my-deep-black/10 h-3/5 w-full"></div>

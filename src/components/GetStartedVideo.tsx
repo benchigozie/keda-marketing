@@ -3,7 +3,6 @@
 import { scrollToId } from '@/utils/scrollToId'
 import ProgressBar from './ProgressBar'
 import { Gift } from 'lucide-react'
-import Link from 'next/link'
 
 
 
