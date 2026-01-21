@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Script from "next/script";
 import { AnalyticsTracker } from "@/components/AnalyticsTracker";
+import { Suspense } from "react";
 
 
 
@@ -31,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <Script
+        <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
           strategy="afterInteractive"
         />
@@ -48,7 +49,9 @@ export default function RootLayout({
         className="antialiased text-base md:text-lg"
       >
         <Header />
-        <AnalyticsTracker />
+        <Suspense fallback={null}>
+          <AnalyticsTracker />
+        </Suspense>
         {children}
       </body>
     </html>
