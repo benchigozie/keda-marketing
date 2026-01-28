@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Keda Marketing",
     description:
-      "Building billion-dollar brands with Facebook ads, high-converting websites, and AI-powered marketing systems.",
+      "Building billion-dollar brands with Facebook ads, high-converting websites, and AI-powered systems.",
     url: "https://kedamarketing.com",
     siteName: "Keda Marketing",
     images: [
