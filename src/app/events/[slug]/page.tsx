@@ -48,10 +48,6 @@ async function page({ params }: PageProps) {
         { slug },
     );
 
-    console.log("this is slug", slug);
-
-    console.log("this is event", event);
-
     return (
         <section className="background-3d relative">
             <div className="flex flex-col gap-6 max-w-4xl mx-auto px-3 pb-12 pt-38">

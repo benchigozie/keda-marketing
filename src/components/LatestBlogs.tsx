@@ -17,16 +17,6 @@ const latestPostsQuery = `
   }
 `;
 
-const mostReadPostsQuery = `
-  *[_type == "post"]
-  | order(views desc) {
-    _id,
-    title,
-    "slug": slug.current,
-    views,
-    publishedAt
-  }
-`;
 
 
 type Author = {
@@ -47,8 +37,6 @@ type Post = {
 
 async function LatestBlogs() {
 
-    console.log("Rendering LatestBlogs");
-
     const [latestPosts] = await Promise.all([
         sanityClient.fetch(latestPostsQuery, {}, {
             next: {
@@ -58,7 +46,6 @@ async function LatestBlogs() {
         }),
     ]);
     const trimmedLatestPosts: Post[] = latestPosts.slice(0, 6);
-    console.log("Latest posts fetched:", trimmedLatestPosts);
 
 
     return (

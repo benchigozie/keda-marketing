@@ -4,6 +4,57 @@ import { urlFor } from "@/lib/sanityImage";
 import Image from "next/image";
 import formatDate from "@/utils/formatDate";
 import { PortableText } from "next-sanity";
+import type { Metadata } from "next";
+
+export async function generateMetadata(
+    { params }: PageProps
+): Promise<Metadata> {
+    const { slug } = await params;
+
+    const post = await sanityClient.fetch<Post>(
+        postQuery,
+        { slug }
+    );
+
+    if (!post) {
+        return {
+            title: "Post not found | Keda Marketing",
+        };
+    }
+
+    const ogImage = post.mainImage
+        ? urlFor(post.mainImage).width(1200).height(630).url()
+        : "https://kedamarketing.com/images/homepagepicture.png";
+
+    return {
+        title: post.title,
+        description: post.excerpt,
+
+        openGraph: {
+            title: post.title,
+            description: post.excerpt,
+            url: `https://kedamarketing.com/blogs/${slug}`,
+            type: "article",
+            publishedTime: post.publishedAt,
+            authors: [post.author.name],
+            images: [
+                {
+                    url: ogImage,
+                    width: 1200,
+                    height: 630,
+                    alt: post.title,
+                },
+            ],
+        },
+
+        twitter: {
+            card: "summary_large_image",
+            title: post.title,
+            description: post.excerpt,
+            images: [ogImage],
+        },
+    };
+}
 
 type Category = {
     _id: string;

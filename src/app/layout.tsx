@@ -17,6 +17,30 @@ export const metadata: Metadata = {
   icons: {
     icon: "/images/keda-mini.png",
   },
+  openGraph: {
+    title: "Keda Marketing",
+    description:
+      "Building billion-dollar brands with Facebook ads, high-converting websites, and AI-powered marketing systems.",
+    url: "https://kedamarketing.com",
+    siteName: "Keda Marketing",
+    images: [
+      {
+        url: "https://kedamarketing.com/images/homepagepicture.png",
+        width: 1200,
+        height: 630,
+        alt: "Keda Marketing",
+      },
+    ],
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Keda Marketing",
+    description:
+      "Building billion-dollar brands with Facebook ads, websites, and AI workflows.",
+    images: ["https://kedamarketing.com/images/homepagepicture.png"],
+  },
 };
 
 
