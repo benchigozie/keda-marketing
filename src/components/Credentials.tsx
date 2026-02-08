@@ -30,7 +30,7 @@ function Credentials() {
                         <p className="font-semibold text-lg">Satisfied Clients</p>
                     </div>
                     <div className="bg-my-blacker border-my-black border rounded-2xl px-5 py-12 flex flex-col gap-3 items-center text-center justify-center">
-                        <h3 className="text-my-white text-3xl md:text-[54px] font-manrope font-extrabold">21M+</h3>
+                        <h3 className="text-my-white text-3xl md:text-[54px] font-manrope font-extrabold">30M+</h3>
                         <p className="font-semibold text-lg">Revenue Generated</p>
                     </div>
                 </div>
