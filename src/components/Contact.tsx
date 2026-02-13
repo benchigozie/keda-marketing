@@ -87,6 +87,11 @@ function Contact() {
                 return;
             }
             setSubmissionState("success");
+            if (window.gtag) {
+                window.gtag('event', 'generate_lead', {
+                    form_name: 'contact_form'
+                });
+            }
             resetForm();
         } catch (err) {
             console.error("Request failed:", err);
